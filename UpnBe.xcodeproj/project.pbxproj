@@ -12,6 +12,9 @@
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
 		D0BEC31A2B6B79E60050E007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3192B6B79E60050E007 /* Preview Assets.xcassets */; };
 		D0BEC3212B6B7C500050E007 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3202B6B7C500050E007 /* UIColor.swift */; };
+		D0BEC3252B6B82820050E007 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3242B6B82820050E007 /* Font.swift */; };
+		D0BEC32E2B6B86540050E007 /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */; };
+		D0BEC32F2B6B86540050E007 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		D0BEC3162B6B79E60050E007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BEC3192B6B79E60050E007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0BEC3202B6B7C500050E007 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D0BEC3242B6B82820050E007 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		D0BEC3312B6B86920050E007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 		D0BEC3112B6B79E50050E007 /* UpnBe */ = {
 			isa = PBXGroup;
 			children = (
+				D0BEC3312B6B86920050E007 /* Info.plist */,
 				D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */,
 				D0BEC3142B6B79E50050E007 /* ContentView.swift */,
 				D0BEC3222B6B7C580050E007 /* Constants */,
@@ -74,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3202B6B7C500050E007 /* UIColor.swift */,
+				D0BEC3242B6B82820050E007 /* Font.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -81,9 +90,19 @@
 		D0BEC3232B6B81880050E007 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0BEC3262B6B85FA0050E007 /* NotoSans */,
 				D0BEC3162B6B79E60050E007 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0BEC3262B6B85FA0050E007 /* NotoSans */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */,
+				D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */,
+			);
+			path = NotoSans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BEC31A2B6B79E60050E007 /* Preview Assets.xcassets in Resources */,
+				D0BEC32E2B6B86540050E007 /* NotoSans-ExtraBold.ttf in Resources */,
 				D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */,
+				D0BEC32F2B6B86540050E007 /* NotoSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BEC3252B6B82820050E007 /* Font.swift in Sources */,
 				D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */,
 				D0BEC3212B6B7C500050E007 /* UIColor.swift in Sources */,
 				D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */,
@@ -290,6 +312,7 @@
 				DEVELOPMENT_TEAM = JPCDXBVSAH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UpnBe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +342,7 @@
 				DEVELOPMENT_TEAM = JPCDXBVSAH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UpnBe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
