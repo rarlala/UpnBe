@@ -20,6 +20,7 @@
 		D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3382B6CBDC50050E007 /* Color1Button.swift */; };
 		D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC33A2B6CBDD00050E007 /* BackgroundColorButton.swift */; };
 		D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3412B6CC9BE0050E007 /* SheetModifier.swift */; };
+		D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3442B6CCBD20050E007 /* CommonTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D0BEC3382B6CBDC50050E007 /* Color1Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color1Button.swift; sourceTree = "<group>"; };
 		D0BEC33A2B6CBDD00050E007 /* BackgroundColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorButton.swift; sourceTree = "<group>"; };
 		D0BEC3412B6CC9BE0050E007 /* SheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifier.swift; sourceTree = "<group>"; };
+		D0BEC3442B6CCBD20050E007 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		D0BEC3322B6B891E0050E007 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D0BEC3462B6CCF810050E007 /* TextFields */,
 				D0BEC3432B6CCAFC0050E007 /* Sheets */,
 				D0BEC3372B6CBDAF0050E007 /* Buttons */,
 				D0BEC33C2B6CC19D0050E007 /* Modifiers */,
@@ -150,6 +153,14 @@
 				D0BEC3332B6B89420050E007 /* TwoButtonBottomSheet.swift */,
 			);
 			path = Sheets;
+			sourceTree = "<group>";
+		};
+		D0BEC3462B6CCF810050E007 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3442B6CCBD20050E007 /* CommonTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 				D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */,
 				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
+				D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */,
 				D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

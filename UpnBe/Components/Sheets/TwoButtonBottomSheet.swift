@@ -9,7 +9,9 @@ import SwiftUI
 
 struct TwoButtonBottomSheet: View {
     @Environment(\.dismiss) var dismiss
+    @State private var inputText = ""
     
+    var isShowTextField = true
     var text: String
     var confirmButtonText: String
     var cancelButtonText: String
@@ -23,7 +25,14 @@ struct TwoButtonBottomSheet: View {
                 Text(text)
                     .font(.notoSansExtraBold16)
                     .foregroundColor(.basic)
+                    .multilineTextAlignment(.center)
                 Spacer()
+                
+                if isShowTextField {
+                    CommonTextField(text: $inputText)
+                        .padding(.horizontal, 15)
+                    Spacer().frame(height: 110)
+                }
             }
             
             GeometryReader { geometry in
@@ -31,7 +40,7 @@ struct TwoButtonBottomSheet: View {
                     Rectangle()
                         .fill(Color.basic)
                         .frame(width: 50, height: 2)
-                        .padding(10)
+                        .padding(20)
                         .cornerRadius(2)
                     
                     Spacer()
@@ -57,7 +66,13 @@ struct TwoButtonBottomSheet: View {
             }
         }
         .ignoresSafeArea()
-        .presentationDetents([.medium])
+        .presentationDetents([.fraction(370 / 740)])
+    }
+}
+
+extension TwoButtonBottomSheet {
+    func setSheet() -> some View {
+        self.modifier(SheetModifier())
     }
 }
 

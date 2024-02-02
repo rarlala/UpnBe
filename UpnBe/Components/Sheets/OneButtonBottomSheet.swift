@@ -30,7 +30,7 @@ struct OneButtonBottomSheet: View {
                     Rectangle()
                         .fill(Color.basic)
                         .frame(width: 50, height: 2)
-                        .padding(10)
+                        .padding(20)
                         .cornerRadius(2)
                     
                     Spacer()
@@ -48,7 +48,13 @@ struct OneButtonBottomSheet: View {
             }
         }
         .ignoresSafeArea()
-        .presentationDetents([.medium])
+        .presentationDetents([.fraction(370 / 740)])
+    }
+}
+
+extension OneButtonBottomSheet {
+    func setSheet() -> some View {
+        self.modifier(SheetModifier())
     }
 }
 
