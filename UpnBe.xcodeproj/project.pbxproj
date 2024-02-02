@@ -11,10 +11,14 @@
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
 		D0BEC31A2B6B79E60050E007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3192B6B79E60050E007 /* Preview Assets.xcassets */; };
-		D0BEC3212B6B7C500050E007 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3202B6B7C500050E007 /* UIColor.swift */; };
+		D0BEC3212B6B7C500050E007 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3202B6B7C500050E007 /* Color.swift */; };
 		D0BEC3252B6B82820050E007 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3242B6B82820050E007 /* Font.swift */; };
 		D0BEC32E2B6B86540050E007 /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */; };
 		D0BEC32F2B6B86540050E007 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */; };
+		D0BEC3342B6B89420050E007 /* TwoButtonBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3332B6B89420050E007 /* TwoButtonBottomSheet.swift */; };
+		D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3352B6C81AF0050E007 /* OneButtonBottomSheet.swift */; };
+		D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3382B6CBDC50050E007 /* Color1Button.swift */; };
+		D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC33A2B6CBDD00050E007 /* BackgroundColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +27,15 @@
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0BEC3162B6B79E60050E007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BEC3192B6B79E60050E007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D0BEC3202B6B7C500050E007 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D0BEC3202B6B7C500050E007 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D0BEC3242B6B82820050E007 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		D0BEC3312B6B86920050E007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0BEC3332B6B89420050E007 /* TwoButtonBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonBottomSheet.swift; sourceTree = "<group>"; };
+		D0BEC3352B6C81AF0050E007 /* OneButtonBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneButtonBottomSheet.swift; sourceTree = "<group>"; };
+		D0BEC3382B6CBDC50050E007 /* Color1Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color1Button.swift; sourceTree = "<group>"; };
+		D0BEC33A2B6CBDD00050E007 /* BackgroundColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				D0BEC3312B6B86920050E007 /* Info.plist */,
 				D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */,
 				D0BEC3142B6B79E50050E007 /* ContentView.swift */,
+				D0BEC3322B6B891E0050E007 /* Components */,
 				D0BEC3222B6B7C580050E007 /* Constants */,
 				D0BEC3232B6B81880050E007 /* Resources */,
 				D0BEC3182B6B79E60050E007 /* Preview Content */,
@@ -81,7 +90,7 @@
 		D0BEC3222B6B7C580050E007 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				D0BEC3202B6B7C500050E007 /* UIColor.swift */,
+				D0BEC3202B6B7C500050E007 /* Color.swift */,
 				D0BEC3242B6B82820050E007 /* Font.swift */,
 			);
 			path = Constants;
@@ -103,6 +112,25 @@
 				D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */,
 			);
 			path = NotoSans;
+			sourceTree = "<group>";
+		};
+		D0BEC3322B6B891E0050E007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3372B6CBDAF0050E007 /* Buttons */,
+				D0BEC3332B6B89420050E007 /* TwoButtonBottomSheet.swift */,
+				D0BEC3352B6C81AF0050E007 /* OneButtonBottomSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0BEC3372B6CBDAF0050E007 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3382B6CBDC50050E007 /* Color1Button.swift */,
+				D0BEC33A2B6CBDD00050E007 /* BackgroundColorButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BEC3252B6B82820050E007 /* Font.swift in Sources */,
+				D0BEC3342B6B89420050E007 /* TwoButtonBottomSheet.swift in Sources */,
 				D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */,
-				D0BEC3212B6B7C500050E007 /* UIColor.swift in Sources */,
+				D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */,
+				D0BEC3212B6B7C500050E007 /* Color.swift in Sources */,
 				D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */,
+				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
+				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

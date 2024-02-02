@@ -8,15 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowSheet: Bool = false
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button {
+                isShowSheet.toggle()
+            } label: {
+                Text("aa")
+            }
         }
         .font(.notoSansMedium20)
-        .padding()
+        .background(.background)
+        .sheet(isPresented: $isShowSheet, content: {
+            TwoButtonBottomSheet(
+                text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
+                confirmButtonText: "확인",
+                cancelButtonText: "취소")
+            .cornerRadius(30)
+            .padding([.leading, .trailing, .bottom], 10)
+            .background(Color.black.opacity(0.1))
+            .ignoresSafeArea()
+        })
     }
 }
 
