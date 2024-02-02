@@ -10,9 +10,8 @@ import SwiftUI
 struct SheetModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-        .cornerRadius(30)
-        .background(Color.black.opacity(0.01))
-        .padding([.leading, .trailing, .bottom], 10)
-        .ignoresSafeArea()
+            .ignoresSafeArea()
+//        .cornerRadius(30)
+
     }
 }

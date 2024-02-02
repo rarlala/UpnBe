@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct UpnBeApp: App {
+    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
     @State private var isShowLaunchScreen = true
     
     var body: some Scene {
@@ -18,6 +19,9 @@ struct UpnBeApp: App {
                     LaunchView()
                 } else {
                     ContentView()
+                        .fullScreenCover(isPresented: $isFirstLaunching) {
+//                            OnboardingView
+                        }
                 }
             }
             .onAppear {

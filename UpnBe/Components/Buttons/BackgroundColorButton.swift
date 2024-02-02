@@ -12,20 +12,23 @@ struct BackgroundColorButton: View {
     var action: () -> Void
     var width: CGFloat
     var height: CGFloat
+    var isActive: Binding<Bool>?
     
     var body: some View {
         Button {
             action()
         } label: {
+            Spacer()
             Text(buttonText)
                 .multilineTextAlignment(.center)
                 .font(.notoSansExtraBold18)
-                .foregroundColor(.background5)
-            
+                .foregroundColor(isActive?.wrappedValue == true ? .background : .background5)
+            Spacer()
         }
         .frame(width: width, height: height)
-        .background(Color.background2)
+        .background(isActive?.wrappedValue == true ? Color.color1 : Color.background2)
         .cornerRadius(15)
+        .contentShape(Rectangle())
     }
 }
 

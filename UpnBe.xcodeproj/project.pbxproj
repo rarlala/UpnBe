@@ -22,6 +22,8 @@
 		D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3412B6CC9BE0050E007 /* SheetModifier.swift */; };
 		D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3442B6CCBD20050E007 /* CommonTextField.swift */; };
 		D0BEC34A2B6CE0010050E007 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3492B6CE0010050E007 /* LaunchView.swift */; };
+		D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */; };
+		D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3502B6D072C0050E007 /* SportsType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D0BEC3412B6CC9BE0050E007 /* SheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifier.swift; sourceTree = "<group>"; };
 		D0BEC3442B6CCBD20050E007 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
 		D0BEC3492B6CE0010050E007 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChoiceView.swift; sourceTree = "<group>"; };
+		D0BEC3502B6D072C0050E007 /* SportsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */,
-				D0BEC3312B6B86920050E007 /* Info.plist */,
 				D0BEC3482B6CDFED0050E007 /* Views */,
 				D0BEC3322B6B891E0050E007 /* Components */,
 				D0BEC3222B6B7C580050E007 /* Constants */,
@@ -106,8 +109,9 @@
 		D0BEC3232B6B81880050E007 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D0BEC34B2B6CE3A70050E007 /* NotoSans */,
+				D0BEC34B2B6CE3A70050E007 /* Fonts */,
 				D0BEC3162B6B79E60050E007 /* Assets.xcassets */,
+				D0BEC3312B6B86920050E007 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,19 +171,37 @@
 		D0BEC3482B6CDFED0050E007 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D0BEC3142B6B79E50050E007 /* ContentView.swift */,
 				D0BEC3492B6CE0010050E007 /* LaunchView.swift */,
+				D0BEC3142B6B79E50050E007 /* ContentView.swift */,
+				D0BEC34C2B6CE4E60050E007 /* OnboardingViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D0BEC34B2B6CE3A70050E007 /* NotoSans */ = {
+		D0BEC34B2B6CE3A70050E007 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				D0BEC3292B6B86540050E007 /* NotoSans-ExtraBold.ttf */,
 				D0BEC32B2B6B86540050E007 /* NotoSans-Medium.ttf */,
 			);
-			path = NotoSans;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D0BEC34C2B6CE4E60050E007 /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC34F2B6D071D0050E007 /* Enum */,
+				D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		D0BEC34F2B6D071D0050E007 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3502B6D072C0050E007 /* SportsType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +282,11 @@
 				D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */,
 				D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */,
 				D0BEC3212B6B7C500050E007 /* Color.swift in Sources */,
+				D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */,
 				D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */,
 				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
+				D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */,
 				D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */,
 				D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */,
 			);
@@ -396,7 +420,7 @@
 				DEVELOPMENT_TEAM = JPCDXBVSAH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpnBe/Info.plist;
+				INFOPLIST_FILE = UpnBe/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,7 +450,7 @@
 				DEVELOPMENT_TEAM = JPCDXBVSAH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpnBe/Info.plist;
+				INFOPLIST_FILE = UpnBe/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
