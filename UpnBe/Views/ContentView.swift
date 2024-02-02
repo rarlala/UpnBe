@@ -24,17 +24,6 @@ struct ContentView: View {
         }
         .font(.notoSansMedium20)
         .background(.background)
-        .sheet(isPresented: $isShowSheet, content: {
-            TwoButtonBottomSheet(
-                text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
-                confirmButtonText: "확인",
-                cancelButtonText: "취소")
-            .modifier(SheetModifier())
-//            OneButtonBottomSheet(
-//                text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
-//                buttonText: "확인")
-//            .setSheet()
-        })
     }
 }
 

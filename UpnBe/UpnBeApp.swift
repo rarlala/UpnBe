@@ -9,9 +9,24 @@ import SwiftUI
 
 @main
 struct UpnBeApp: App {
+    @State private var isShowLaunchScreen = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                if isShowLaunchScreen {
+                    LaunchView()
+                } else {
+                    ContentView()
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        isShowLaunchScreen = false
+                    }
+                }
+            }
         }
     }
 }
