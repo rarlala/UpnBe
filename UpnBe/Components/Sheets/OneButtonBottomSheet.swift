@@ -38,12 +38,13 @@ struct OneButtonBottomSheet: View {
                     Color1Button(
                         buttonText: buttonText,
                         action: { dismiss() },
-                        width: geometry.size.width - 20,
+                        width: geometry.size.width - 30,
                         height: 50
                     )
                     .padding(.bottom, 10)
                 }
-                .padding([.leading, .trailing, .bottom], 10)
+                .padding(.horizontal, 15)
+                .padding(.bottom, 10)
             }
         }
         .ignoresSafeArea()

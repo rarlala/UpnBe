@@ -18,7 +18,7 @@ struct TwoButtonBottomSheet: View {
         ZStack {
             Color.background
             
-            VStack(spacing: 10) {
+            VStack {
                 Spacer()
                 Text(text)
                     .font(.notoSansExtraBold16)
@@ -52,7 +52,8 @@ struct TwoButtonBottomSheet: View {
                     }
                     .padding(.bottom, 10)
                 }
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 15)
+                .padding(.bottom, 10)
             }
         }
         .ignoresSafeArea()

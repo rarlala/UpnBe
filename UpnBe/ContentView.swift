@@ -25,14 +25,15 @@ struct ContentView: View {
         .font(.notoSansMedium20)
         .background(.background)
         .sheet(isPresented: $isShowSheet, content: {
-            TwoButtonBottomSheet(
+//            TwoButtonBottomSheet(
+//                text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
+//                confirmButtonText: "확인",
+//                cancelButtonText: "취소")
+//            .modifier(SheetModifier())
+            OneButtonBottomSheet(
                 text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
-                confirmButtonText: "확인",
-                cancelButtonText: "취소")
-            .cornerRadius(30)
-            .padding([.leading, .trailing, .bottom], 10)
-            .background(Color.black.opacity(0.1))
-            .ignoresSafeArea()
+                buttonText: "확인")
+            .modifier(SheetModifier())
         })
     }
 }
