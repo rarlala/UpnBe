@@ -31,6 +31,7 @@
 		D0BEC3642B70A9030050E007 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3632B70A9030050E007 /* ProfileView.swift */; };
 		D0BEC3672B70A90F0050E007 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3662B70A90F0050E007 /* SaveView.swift */; };
 		D0BEC36A2B70A9210050E007 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3692B70A9210050E007 /* FilterView.swift */; };
+		D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC36E2B70C6E20050E007 /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		D0BEC3632B70A9030050E007 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D0BEC3662B70A90F0050E007 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 		D0BEC3692B70A9210050E007 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		D0BEC36E2B70C6E20050E007 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3612B70A8F90050E007 /* ReportView.swift */,
+				D0BEC36E2B70C6E20050E007 /* ProgressBar.swift */,
 			);
 			path = ReportTab;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
 				D0BEC3642B70A9030050E007 /* ProfileView.swift in Sources */,
 				D0BEC35A2B70A81E0050E007 /* TabsView.swift in Sources */,
+				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
 				D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */,
 				D0BEC35C2B70A8B90050E007 /* ShortFormView.swift in Sources */,
