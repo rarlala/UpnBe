@@ -12,6 +12,10 @@ struct UpnBeApp: App {
     @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
     @State private var isShowLaunchScreen = true
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.black
+    }
+    
     var body: some Scene {
         WindowGroup {
             ZStack {

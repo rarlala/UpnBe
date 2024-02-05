@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tune_basic.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
