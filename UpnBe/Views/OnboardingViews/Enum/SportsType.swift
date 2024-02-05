@@ -25,4 +25,17 @@ enum SportsType: CaseIterable {
             return Image("Swimming")
         }
     }
+    
+    var name: String {
+        switch self {
+        case .soccer:
+            return "축구/풋살"
+        case .basketball:
+            return "농구"
+        case .volleyball:
+            return "배구"
+        case .swimming:
+            return "수영"
+        }
+    }
 }

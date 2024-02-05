@@ -10,6 +10,7 @@ import SwiftUI
 struct OnboardingChoiceView: View {
     @State var selectedSport: SportsType?
     @State var isActive: Bool = false
+    @State var isShowPopup: Bool = false
     @State var isNextButtonTapped: Bool = false
     @State var isPopupButtonTapped: Bool = false
     
@@ -40,7 +41,13 @@ struct OnboardingChoiceView: View {
                         ForEach(SportsType.allCases, id: \.self) { sport in
                             Button(action: {
                                 selectedSport = sport
-                                isActive = true
+                                
+                                if selectedSport == .soccer {
+                                    isActive = true
+                                } else {
+                                    isActive = false
+                                    isShowPopup = true
+                                }
                             }) {
                                 sport.image
                                     .resizable()
@@ -49,6 +56,19 @@ struct OnboardingChoiceView: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 20).stroke(selectedSport == sport ? Color.basic : .clear, lineWidth: 2)
                                     )
+                            }
+                            .sheet(isPresented: $isShowPopup) {
+                                if let sport = selectedSport {
+                                    TwoButtonBottomSheet(
+                                        isShowTextField: true,
+                                        text: "\(sport.name)도 빠르게 준비중이에요.\n\(sport.name) 출시 알림을 받고싶다면\n연락처를 남겨주세요.",
+                                        confirmButtonText: "미리알림받기",
+                                        cancelButtonText: "종목출시만 요청",
+                                        confirmAction: popupButtonTapped,
+                                        cancelAction: popupButtonTapped
+                                    )
+                                    .setSheet()
+                                }
                             }
                         }
                     }
@@ -66,19 +86,8 @@ struct OnboardingChoiceView: View {
                         isActive: $isActive
                     )
                     .disabled(!isActive)
-                    .sheet(isPresented: $isNextButtonTapped) {
-                        TwoButtonBottomSheet(
-                            isShowTextField: true,
-                            text: "{#종목명}도 빠르게 준비중이에요.\n{#종목명} 출시 알림을 받고싶다면\n연락처를 남겨주세요.",
-                            confirmButtonText: "미리알림받기",
-                            cancelButtonText: "종목출시만 요청",
-                            confirmAction: popupButtonTapped,
-                            cancelAction: popupButtonTapped
-                        )
-                        .setSheet()
-                            .fullScreenCover(isPresented: $isPopupButtonTapped) {
-                                OnboardingReadyView()
-                            }
+                    .fullScreenCover(isPresented: $isNextButtonTapped) {
+                        OnboardingReadyView()
                     }
                 }
             }
