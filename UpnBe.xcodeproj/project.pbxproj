@@ -24,6 +24,7 @@
 		D0BEC34A2B6CE0010050E007 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3492B6CE0010050E007 /* LaunchView.swift */; };
 		D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */; };
 		D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3502B6D072C0050E007 /* SportsType.swift */; };
+		D0BEC3532B70737C0050E007 /* OnboardingReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3522B70737C0050E007 /* OnboardingReadyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D0BEC3492B6CE0010050E007 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChoiceView.swift; sourceTree = "<group>"; };
 		D0BEC3502B6D072C0050E007 /* SportsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsType.swift; sourceTree = "<group>"; };
+		D0BEC3522B70737C0050E007 /* OnboardingReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReadyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +173,9 @@
 		D0BEC3482B6CDFED0050E007 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0BEC34C2B6CE4E60050E007 /* OnboardingViews */,
 				D0BEC3492B6CE0010050E007 /* LaunchView.swift */,
 				D0BEC3142B6B79E50050E007 /* ContentView.swift */,
-				D0BEC34C2B6CE4E60050E007 /* OnboardingViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +194,7 @@
 			children = (
 				D0BEC34F2B6D071D0050E007 /* Enum */,
 				D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */,
+				D0BEC3522B70737C0050E007 /* OnboardingReadyView.swift */,
 			);
 			path = OnboardingViews;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
 				D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */,
+				D0BEC3532B70737C0050E007 /* OnboardingReadyView.swift in Sources */,
 				D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */,
 				D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */,
 			);

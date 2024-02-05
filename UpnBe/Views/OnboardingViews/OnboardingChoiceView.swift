@@ -11,11 +11,17 @@ struct OnboardingChoiceView: View {
     @State var selectedSport: SportsType?
     @State var isActive: Bool = false
     @State var isNextButtonTapped: Bool = false
+    @State var isPopupButtonTapped: Bool = false
     
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    
+    func popupButtonTapped() {
+        isPopupButtonTapped = true
+        print(isPopupButtonTapped)
+    }
     
     var body: some View {
         ZStack {
@@ -66,8 +72,13 @@ struct OnboardingChoiceView: View {
                             text: "{#종목명}도 빠르게 준비중이에요.\n{#종목명} 출시 알림을 받고싶다면\n연락처를 남겨주세요.",
                             confirmButtonText: "미리알림받기",
                             cancelButtonText: "종목출시만 요청",
-                            confirmAction: { print(11) }
-                        ).setSheet()
+                            confirmAction: popupButtonTapped,
+                            cancelAction: popupButtonTapped
+                        )
+                        .setSheet()
+                            .fullScreenCover(isPresented: $isPopupButtonTapped) {
+                                OnboardingReadyView()
+                            }
                     }
                 }
             }
@@ -75,7 +86,6 @@ struct OnboardingChoiceView: View {
             .padding(.bottom, 30)
         }
         .ignoresSafeArea()
-        
     }
 }
 

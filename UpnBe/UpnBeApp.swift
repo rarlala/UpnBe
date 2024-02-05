@@ -20,7 +20,7 @@ struct UpnBeApp: App {
                 } else {
                     ContentView()
                         .fullScreenCover(isPresented: $isFirstLaunching) {
-//                            OnboardingView
+                            OnboardingChoiceView()
                         }
                 }
             }

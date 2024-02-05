@@ -16,6 +16,7 @@ struct TwoButtonBottomSheet: View {
     var confirmButtonText: String
     var cancelButtonText: String
     var confirmAction: () -> Void
+    var cancelAction: () -> Void = {}
     
     var body: some View {
         ZStack {
@@ -51,7 +52,7 @@ struct TwoButtonBottomSheet: View {
                         HStack(spacing: 10) {
                             BackgroundColorButton(
                                 buttonText: cancelButtonText,
-                                action: {dismiss()},
+                                action: cancelAction,
                                 width: (geometry.size.width - 40) / 2,
                                 height: 50
                             )
