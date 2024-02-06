@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct FilterView: View {
-    private let filterViewModel = FilterViewModel()
+    private let viewModel = FilterViewModel()
+    
+    @EnvironmentObject var tab: TabObservableObject
+    @State private var division = ""
+    @State private var drill = ""
+    @State private var place = ""
+    @State private var participant = ""
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -19,17 +25,21 @@ struct FilterView: View {
                     Spacer()
                         .frame(height: 25)
 
-                    FilterBox(filterData: filterViewModel.getDivisionData())
-                    FilterBox(filterData: filterViewModel.getDrillData())
-                    FilterBox(filterData: filterViewModel.getPlaceData())
-                    FilterBox(filterData: filterViewModel.getParticipantData())
+                    FilterBox(filterData: viewModel.getDivisionData(),
+                              selectedFilter: $division)
+                    FilterBox(filterData: viewModel.getDrillData(),
+                              selectedFilter: $drill)
+                    FilterBox(filterData: viewModel.getPlaceData(),
+                              selectedFilter: $place)
+                    FilterBox(filterData: viewModel.getParticipantData(),
+                              selectedFilter: $participant)
 
                     Spacer()
                         .frame(height: 25)
                     
                     GeometryReader { geometry in
                         Color1Button(buttonText: "적용하기",
-                                     action: {print(1)},
+                                     action: { tab.selectedIndex = 2 },
                                      width: geometry.size.width,
                                      height: 50)
                     }
