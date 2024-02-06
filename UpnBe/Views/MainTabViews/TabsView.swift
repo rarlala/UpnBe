@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabsView: View {
-    @State private var selectedTabIndex = 2
+    @State private var selectedTabIndex = 4
     
     var body: some View {
         TabView(selection: $selectedTabIndex) {
