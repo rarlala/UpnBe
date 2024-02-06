@@ -17,11 +17,12 @@ struct Color1Button: View {
         Button {
             action()
         } label: {
+            Spacer()
             Text(buttonText)
                 .multilineTextAlignment(.center)
                 .font(.notoSansExtraBold18)
                 .foregroundColor(.background)
-            
+            Spacer()
         }
         .frame(width: width, height: height)
         .background(Color.color1)
