@@ -59,7 +59,10 @@ struct ReportProfileBox: View {
                         }
                     }
                 }
+                
+                Spacer()
             }
+            .padding(.horizontal, 30)
         }
         .frame(height: 160)
         .background(Color.color1)
