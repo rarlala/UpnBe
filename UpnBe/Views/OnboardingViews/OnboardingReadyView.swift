@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingReadyView: View {
+    @Binding var isFirstLaunching: Bool
+    
     let datas = [
         (icon: "icon-up", text: "동작을 잘 따라할 수 있다면?"),
         (icon: "icon-be", text: "연습이 조금 더 필요하다면?"),
@@ -15,7 +17,7 @@ struct OnboardingReadyView: View {
     ]
     
     func confirmButtonTapped() {
-        // TODO : move to main tab view
+        isFirstLaunching.toggle()
     }
     
     var body: some View {
@@ -71,6 +73,7 @@ struct OnboardingReadyView: View {
 
 struct OnboardingReadyView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingReadyView()
+        OnboardingReadyView(isFirstLaunching: .constant(true))
+            .environmentObject(TabObservableObject())
     }
 }

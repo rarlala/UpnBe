@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardingChoiceView: View {
+    @Binding var isFirstLaunching: Bool
     @State var selectedSport: SportsType?
     @State var isActive: Bool = false
     @State var isShowPopup: Bool = false
@@ -86,7 +87,8 @@ struct OnboardingChoiceView: View {
                     )
                     .disabled(!isActive)
                     .fullScreenCover(isPresented: $isNextButtonTapped) {
-                        OnboardingReadyView()
+                        OnboardingReadyView(isFirstLaunching: $isFirstLaunching)
+                            .environmentObject(TabObservableObject())
                     }
                 }
             }
@@ -99,6 +101,6 @@ struct OnboardingChoiceView: View {
 
 struct OnboardingChoiceView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingChoiceView()
+        OnboardingChoiceView(isFirstLaunching: .constant(true))
     }
 }
