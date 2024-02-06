@@ -17,61 +17,7 @@ struct ReportView: View {
     
     var body: some View {
         VStack {
-            ZStack {
-                Color.color1
-                
-                HStack(alignment: .top) {
-                    Image("icon-profile-image")
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                        .padding(.trailing, 30)
-                    
-                    VStack(alignment: .leading) {
-                        Text("민첩한곰돌이")
-                            .font(.notoSansExtraBold20)
-                            .foregroundColor(.background)
-                            .padding(.bottom, 11)
-                        
-                        HStack() {
-                            VStack(alignment: .leading) {
-                                Text("레벨")
-                                    .font(.notoSansExtraBold18)
-                                
-                                Spacer()
-                                    .frame(height: 5)
-                                
-                                Text("디비전")
-                                    .font(.notoSansExtraBold18)
-                                
-                                Spacer()
-                                    .frame(height: 5)
-                                
-                                Text("소속")
-                                    .font(.notoSansExtraBold18)
-                            }
-                            VStack(alignment: .leading) {
-                                Text("12")
-                                    .font(.notoSansExtraBold18)
-                                
-                                Spacer()
-                                    .frame(height: 5)
-                                
-                                Text("Rookie")
-                                    .font(.notoSansExtraBold18)
-                                
-                                Spacer()
-                                    .frame(height: 5)
-                                
-                                Text("지구대학교")
-                                    .font(.notoSansExtraBold18)
-                            }
-                        }
-                    }
-                }
-            }
-            .frame(height: 160)
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            .background(Color.color1)
+            ReportProfileBox()
             
             Spacer()
                 .frame(height: 0)
