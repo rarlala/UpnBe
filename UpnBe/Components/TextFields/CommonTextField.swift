@@ -11,7 +11,7 @@ struct CommonTextField: View {
     @Binding var text: String
     
     var body: some View {
-        TextField("입력하세요", text: $text)
+        TextField("", text: $text, prompt: Text("입력하세요").foregroundColor(.basic))
             .font(.notoSansExtraBold16)
             .multilineTextAlignment(.center)
             .padding(EdgeInsets(top: 16, leading: 7, bottom: 16, trailing: 7))
