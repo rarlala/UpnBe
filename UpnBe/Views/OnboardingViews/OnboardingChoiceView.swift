@@ -21,7 +21,6 @@ struct OnboardingChoiceView: View {
     
     func popupButtonTapped() {
         isPopupButtonTapped = true
-        print(isPopupButtonTapped)
     }
     
     var body: some View {
