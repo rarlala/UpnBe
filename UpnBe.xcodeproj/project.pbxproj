@@ -19,6 +19,10 @@
 		D02EC1262B72491600B67501 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1252B72491600B67501 /* VideoPlayerView.swift */; };
 		D02EC1282B73208500B67501 /* ShortFormButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1272B73208500B67501 /* ShortFormButtons.swift */; };
 		D02EC12A2B73226900B67501 /* ShortFormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1292B73226900B67501 /* ShortFormButton.swift */; };
+		D02EC12D2B73594600B67501 /* SaveTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC12C2B73594600B67501 /* SaveTabButton.swift */; };
+		D02EC12F2B735A0F00B67501 /* SaveTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC12E2B735A0F00B67501 /* SaveTabBar.swift */; };
+		D02EC1322B73690000B67501 /* SaveVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1312B73690000B67501 /* SaveVideoView.swift */; };
+		D02EC1342B736D5F00B67501 /* VideoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1332B736D5F00B67501 /* VideoGridView.swift */; };
 		D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */; };
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
@@ -59,6 +63,10 @@
 		D02EC1252B72491600B67501 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		D02EC1272B73208500B67501 /* ShortFormButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortFormButtons.swift; sourceTree = "<group>"; };
 		D02EC1292B73226900B67501 /* ShortFormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortFormButton.swift; sourceTree = "<group>"; };
+		D02EC12C2B73594600B67501 /* SaveTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTabButton.swift; sourceTree = "<group>"; };
+		D02EC12E2B735A0F00B67501 /* SaveTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTabBar.swift; sourceTree = "<group>"; };
+		D02EC1312B73690000B67501 /* SaveVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVideoView.swift; sourceTree = "<group>"; };
+		D02EC1332B736D5F00B67501 /* VideoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridView.swift; sourceTree = "<group>"; };
 		D0BEC30F2B6B79E50050E007 /* UpnBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpnBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnBeApp.swift; sourceTree = "<group>"; };
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -322,6 +330,10 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3662B70A90F0050E007 /* SaveView.swift */,
+				D02EC12E2B735A0F00B67501 /* SaveTabBar.swift */,
+				D02EC12C2B73594600B67501 /* SaveTabButton.swift */,
+				D02EC1332B736D5F00B67501 /* VideoGridView.swift */,
+				D02EC1312B73690000B67501 /* SaveVideoView.swift */,
 			);
 			path = SaveTab;
 			sourceTree = "<group>";
@@ -414,6 +426,7 @@
 				D0BEC3342B6B89420050E007 /* TwoButtonBottomSheet.swift in Sources */,
 				D02EC1282B73208500B67501 /* ShortFormButtons.swift in Sources */,
 				D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */,
+				D02EC12D2B73594600B67501 /* SaveTabButton.swift in Sources */,
 				D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */,
 				D0BEC3212B6B7C500050E007 /* Color.swift in Sources */,
 				D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */,
@@ -426,14 +439,17 @@
 				D02EC12A2B73226900B67501 /* ShortFormButton.swift in Sources */,
 				D0BEC3362B6C81AF0050E007 /* OneButtonBottomSheet.swift in Sources */,
 				D0BEC3642B70A9030050E007 /* ProfileView.swift in Sources */,
+				D02EC1342B736D5F00B67501 /* VideoGridView.swift in Sources */,
 				D02EC11E2B72137A00B67501 /* ReportProfileBox.swift in Sources */,
 				D0BEC35A2B70A81E0050E007 /* TabsView.swift in Sources */,
 				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
+				D02EC1322B73690000B67501 /* SaveVideoView.swift in Sources */,
 				D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */,
 				D0BEC35C2B70A8B90050E007 /* ShortFormView.swift in Sources */,
 				D02EC1202B72143300B67501 /* ProfileBox.swift in Sources */,
 				D02EC1192B71CC9A00B67501 /* FilterViewData.swift in Sources */,
+				D02EC12F2B735A0F00B67501 /* SaveTabBar.swift in Sources */,
 				D02EC1242B72214E00B67501 /* ProfileMenuLine.swift in Sources */,
 				D0BEC3532B70737C0050E007 /* OnboardingReadyView.swift in Sources */,
 				D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */,
