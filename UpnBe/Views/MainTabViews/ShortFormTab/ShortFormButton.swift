@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ShortFormButton: View {
-    @State var isActive: Bool = false
+    @Binding var isActive: Bool
     
     var defaultImage: String
     var activeImage: String
@@ -36,6 +36,7 @@ struct ShortFormButton: View {
 struct ShortFormButton_Previews: PreviewProvider {
     static var previews: some View {
         ShortFormButton(
+            isActive: .constant(false),
             defaultImage: "icon-up",
             activeImage: "icon-up-on",
             buttonText: "가능") {
