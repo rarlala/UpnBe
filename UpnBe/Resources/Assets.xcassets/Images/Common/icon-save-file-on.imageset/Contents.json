@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-save-on.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
