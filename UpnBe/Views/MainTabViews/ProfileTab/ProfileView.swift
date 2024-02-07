@@ -15,7 +15,6 @@ struct ProfileView: View {
             VStack {
                 ProfileBox()
                 ProfileMenuList()
-                    .padding(.horizontal, 20)
             }
         }
     }
