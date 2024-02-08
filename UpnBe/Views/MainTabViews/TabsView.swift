@@ -8,7 +8,7 @@
 import SwiftUI
 
 class TabObservableObject: ObservableObject {
-    @Published var selectedIndex = 2
+    @Published var selectedIndex = 1
 }
 
 struct TabsView: View {

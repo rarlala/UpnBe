@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct VideoGridView: View {
-    @Binding var selectedTab: Int
-    @Binding var data: [String]
+    @ObservedObject var viewModel: SaveViewModel
     
     var columns: [GridItem] = [
         GridItem(.flexible(), spacing: 12),
@@ -19,8 +18,8 @@ struct VideoGridView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(data.indices, id: \.self) { index in
-                    SaveVideoView(image: data[index])
+                ForEach(viewModel.getData().indices, id: \.self) { index in
+                    SaveVideoView(image: viewModel.getData()[index].imageName)
                 }
             }
             .padding(.horizontal, 12)
@@ -32,8 +31,7 @@ struct VideoGridView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.background
-            
-            VideoGridView(selectedTab: .constant(0), data: .constant(["sample-save-image"]))
+            VideoGridView(viewModel: SaveViewModel())
         }
     }
 }
