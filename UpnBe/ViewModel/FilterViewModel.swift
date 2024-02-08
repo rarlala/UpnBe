@@ -8,7 +8,7 @@
 import Foundation
 
 class FilterViewModel {
-    let data = FilterViewData()
+    private let data = FilterViewData()
     
     func getDivisionData() -> FilterData {
         return data.divisionDummyData

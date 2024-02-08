@@ -24,6 +24,11 @@
 		D02EC1322B73690000B67501 /* SaveVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1312B73690000B67501 /* SaveVideoView.swift */; };
 		D02EC1342B736D5F00B67501 /* VideoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1332B736D5F00B67501 /* VideoGridView.swift */; };
 		D02EC1372B73B36400B67501 /* TopRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1362B73B36400B67501 /* TopRoundedRectangle.swift */; };
+		D02EC13B2B74740B00B67501 /* ReportDrillCurrentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC13A2B74740B00B67501 /* ReportDrillCurrentState.swift */; };
+		D02EC13D2B7478D200B67501 /* ReportViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC13C2B7478D200B67501 /* ReportViewData.swift */; };
+		D02EC13F2B74793700B67501 /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC13E2B74793700B67501 /* ReportViewModel.swift */; };
+		D02EC1412B74AAFC00B67501 /* ReportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1402B74AAFC00B67501 /* ReportData.swift */; };
+		D02EC1452B74B70100B67501 /* ReportDrillLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1442B74B70100B67501 /* ReportDrillLevel.swift */; };
 		D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */; };
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
@@ -69,6 +74,11 @@
 		D02EC1312B73690000B67501 /* SaveVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVideoView.swift; sourceTree = "<group>"; };
 		D02EC1332B736D5F00B67501 /* VideoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridView.swift; sourceTree = "<group>"; };
 		D02EC1362B73B36400B67501 /* TopRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundedRectangle.swift; sourceTree = "<group>"; };
+		D02EC13A2B74740B00B67501 /* ReportDrillCurrentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDrillCurrentState.swift; sourceTree = "<group>"; };
+		D02EC13C2B7478D200B67501 /* ReportViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewData.swift; sourceTree = "<group>"; };
+		D02EC13E2B74793700B67501 /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		D02EC1402B74AAFC00B67501 /* ReportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportData.swift; sourceTree = "<group>"; };
+		D02EC1442B74B70100B67501 /* ReportDrillLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDrillLevel.swift; sourceTree = "<group>"; };
 		D0BEC30F2B6B79E50050E007 /* UpnBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpnBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnBeApp.swift; sourceTree = "<group>"; };
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +124,7 @@
 			children = (
 				D02EC1162B71CC7100B67501 /* DTO */,
 				D02EC1182B71CC9A00B67501 /* FilterViewData.swift */,
+				D02EC13C2B7478D200B67501 /* ReportViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				D02EC1142B71CC6800B67501 /* FilterViewModel.swift */,
+				D02EC13E2B74793700B67501 /* ReportViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D02EC1102B71C89900B67501 /* FilterData.swift */,
+				D02EC1402B74AAFC00B67501 /* ReportData.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -140,6 +153,14 @@
 				D02EC1362B73B36400B67501 /* TopRoundedRectangle.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		D02EC1462B74BA4700B67501 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC36E2B70C6E20050E007 /* ProgressBar.swift */,
+			);
+			path = ProgressBar;
 			sourceTree = "<group>";
 		};
 		D0BEC3062B6B79E50050E007 = {
@@ -204,6 +225,7 @@
 		D0BEC3322B6B891E0050E007 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D02EC1462B74BA4700B67501 /* ProgressBar */,
 				D02EC1352B73B33A00B67501 /* Shape */,
 				D0BEC3462B6CCF810050E007 /* TextFields */,
 				D0BEC3432B6CCAFC0050E007 /* Sheets */,
@@ -320,8 +342,9 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3612B70A8F90050E007 /* ReportView.swift */,
-				D0BEC36E2B70C6E20050E007 /* ProgressBar.swift */,
 				D02EC11D2B72137A00B67501 /* ReportProfileBox.swift */,
+				D02EC1442B74B70100B67501 /* ReportDrillLevel.swift */,
+				D02EC13A2B74740B00B67501 /* ReportDrillCurrentState.swift */,
 			);
 			path = ReportTab;
 			sourceTree = "<group>";
@@ -330,9 +353,9 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3632B70A9030050E007 /* ProfileView.swift */,
+				D02EC11F2B72143300B67501 /* ProfileBox.swift */,
 				D02EC1212B721E2C00B67501 /* ProfileMenuList.swift */,
 				D02EC1232B72214E00B67501 /* ProfileMenuLine.swift */,
-				D02EC11F2B72143300B67501 /* ProfileBox.swift */,
 			);
 			path = ProfileTab;
 			sourceTree = "<group>";
@@ -443,6 +466,7 @@
 				D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */,
 				D0BEC3622B70A8F90050E007 /* ReportView.swift in Sources */,
 				D02EC1262B72491600B67501 /* VideoPlayerView.swift in Sources */,
+				D02EC13F2B74793700B67501 /* ReportViewModel.swift in Sources */,
 				D0BEC36A2B70A9210050E007 /* FilterView.swift in Sources */,
 				D02EC1152B71CC6800B67501 /* FilterViewModel.swift in Sources */,
 				D02EC11B2B71D20C00B67501 /* FilterButton.swift in Sources */,
@@ -453,12 +477,16 @@
 				D02EC1342B736D5F00B67501 /* VideoGridView.swift in Sources */,
 				D02EC11E2B72137A00B67501 /* ReportProfileBox.swift in Sources */,
 				D02EC1372B73B36400B67501 /* TopRoundedRectangle.swift in Sources */,
+				D02EC13B2B74740B00B67501 /* ReportDrillCurrentState.swift in Sources */,
 				D0BEC35A2B70A81E0050E007 /* TabsView.swift in Sources */,
 				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
+				D02EC1452B74B70100B67501 /* ReportDrillLevel.swift in Sources */,
 				D02EC1322B73690000B67501 /* SaveVideoView.swift in Sources */,
+				D02EC1412B74AAFC00B67501 /* ReportData.swift in Sources */,
 				D0BEC3512B6D072C0050E007 /* SportsType.swift in Sources */,
 				D0BEC35C2B70A8B90050E007 /* ShortFormView.swift in Sources */,
+				D02EC13D2B7478D200B67501 /* ReportViewData.swift in Sources */,
 				D02EC1202B72143300B67501 /* ProfileBox.swift in Sources */,
 				D02EC1192B71CC9A00B67501 /* FilterViewData.swift in Sources */,
 				D02EC12F2B735A0F00B67501 /* SaveTabBar.swift in Sources */,

@@ -59,7 +59,7 @@ struct ProfileBox: View {
         .padding(.horizontal, 30)
         .frame(height: 160)
         .background(Color.color1)
-        .clipShape(TopRoundedRectangle(radius: 20))
+        .clipShape(TopRoundedRectangle(radius: 30))
     }
 }
 

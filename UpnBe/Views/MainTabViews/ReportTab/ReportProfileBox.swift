@@ -9,63 +9,46 @@ import SwiftUI
 
 struct ReportProfileBox: View {
     var body: some View {
-        ZStack {
-            Color.color1
+        HStack(alignment: .top) {
+            Image("icon-profile-image")
+                .resizable()
+                .frame(width: 90, height: 90)
+                .padding(.trailing, 30)
             
-            HStack(alignment: .top) {
-                Image("icon-profile-image")
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                    .padding(.trailing, 30)
+            VStack(alignment: .leading, spacing: 11) {
+                Text("민첩한곰돌이")
+                    .font(.notoSansExtraBold20)
+                    .foregroundColor(.background)
                 
-                VStack(alignment: .leading) {
-                    Text("민첩한곰돌이")
-                        .font(.notoSansExtraBold20)
-                        .foregroundColor(.background)
-                        .padding(.bottom, 11)
-                    
-                    HStack() {
-                        VStack(alignment: .leading) {
-                            Text("레벨")
-                                .font(.notoSansExtraBold18)
-                            
-                            Spacer()
-                                .frame(height: 5)
-                            
-                            Text("디비전")
-                                .font(.notoSansExtraBold18)
-                            
-                            Spacer()
-                                .frame(height: 5)
-                            
-                            Text("소속")
-                                .font(.notoSansExtraBold18)
-                        }
-                        VStack(alignment: .leading) {
-                            Text("12")
-                                .font(.notoSansExtraBold18)
-                            
-                            Spacer()
-                                .frame(height: 5)
-                            
-                            Text("Rookie")
-                                .font(.notoSansExtraBold18)
-                            
-                            Spacer()
-                                .frame(height: 5)
-                            
-                            Text("지구대학교")
-                                .font(.notoSansExtraBold18)
-                        }
+                HStack() {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("레벨")
+                            .font(.notoSansExtraBold18)
+                        
+                        Text("디비전")
+                            .font(.notoSansExtraBold18)
+                        
+                        Text("소속")
+                            .font(.notoSansExtraBold18)
+                    }
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("12")
+                            .font(.notoSansExtraBold18)
+                        
+                        Text("Rookie")
+                            .font(.notoSansExtraBold18)
+                        
+                        Text("지구대학교")
+                            .font(.notoSansExtraBold18)
                     }
                 }
-                
-                Spacer()
             }
-            .padding(.horizontal, 30)
+            Spacer()
         }
         .frame(height: 160)
+        .padding(.horizontal, 30)
         .background(Color.color1)
+        .clipShape(TopRoundedRectangle(radius: 30))
     }
 }
 
