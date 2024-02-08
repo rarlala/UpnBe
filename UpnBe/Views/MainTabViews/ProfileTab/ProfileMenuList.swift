@@ -14,11 +14,10 @@ struct ProfileMenuList: View {
             ProfileMenuLine(cellText: "카카오톡 문의하기")
             ProfileMenuLine(cellText: "자주 묻는 질문")
             ProfileMenuLine(cellText: "공지사항")
+            Spacer()
         }
         .background(Color.background)
         .scrollContentBackground(.hidden)
-        
-        Spacer()
     }
 }
 

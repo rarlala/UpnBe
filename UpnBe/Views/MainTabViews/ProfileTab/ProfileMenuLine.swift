@@ -23,7 +23,6 @@ struct ProfileMenuLine: View {
                 .foregroundColor(.basic)
         }
         .padding(.bottom, 10)
-        .listRowBackground(Color.background)
         .background(
             Rectangle()
                 .fill(Color.background3)

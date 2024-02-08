@@ -10,9 +10,9 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         ZStack {
-            Color.background
+            Color.black.edgesIgnoringSafeArea(.all)
             
-            VStack {
+            VStack(spacing: 0) {
                 ProfileBox()
                 ProfileMenuList()
             }
