@@ -22,7 +22,6 @@ struct ShortFormView: View {
                 GeometryReader { geomtry in
                     VideoPlayerView(url: urlString)
                         .frame(width: geomtry.size.width, height: geomtry.size.height)
-                        .statusBar(hidden: false)
                 }
             }
                 

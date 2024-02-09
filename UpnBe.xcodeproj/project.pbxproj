@@ -38,6 +38,7 @@
 		D02EC1572B74DFDA00B67501 /* FilterResetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1562B74DFDA00B67501 /* FilterResetButton.swift */; };
 		D02EC1592B75D13C00B67501 /* FilterConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1582B75D13C00B67501 /* FilterConfirmButton.swift */; };
 		D02EC15B2B75FC5E00B67501 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC15A2B75FC5E00B67501 /* VideoPlayerViewModel.swift */; };
+		D02EC15D2B7605CB00B67501 /* VideoControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC15C2B7605CB00B67501 /* VideoControlBar.swift */; };
 		D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */; };
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		D02EC1562B74DFDA00B67501 /* FilterResetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterResetButton.swift; sourceTree = "<group>"; };
 		D02EC1582B75D13C00B67501 /* FilterConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConfirmButton.swift; sourceTree = "<group>"; };
 		D02EC15A2B75FC5E00B67501 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
+		D02EC15C2B7605CB00B67501 /* VideoControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoControlBar.swift; sourceTree = "<group>"; };
 		D0BEC30F2B6B79E50050E007 /* UpnBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpnBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnBeApp.swift; sourceTree = "<group>"; };
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				D02EC1492B74BDAF00B67501 /* Enum */,
 				D0BEC35B2B70A8B90050E007 /* ShortFormView.swift */,
 				D02EC1252B72491600B67501 /* VideoPlayerView.swift */,
+				D02EC15C2B7605CB00B67501 /* VideoControlBar.swift */,
 				D02EC1272B73208500B67501 /* ShortFormButtons.swift */,
 				D02EC1292B73226900B67501 /* ShortFormButton.swift */,
 			);
@@ -521,6 +524,7 @@
 				D02EC15B2B75FC5E00B67501 /* VideoPlayerViewModel.swift in Sources */,
 				D02EC1552B74D52A00B67501 /* FilterBoxList.swift in Sources */,
 				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
+				D02EC15D2B7605CB00B67501 /* VideoControlBar.swift in Sources */,
 				D02EC14D2B74BEB200B67501 /* ShortFormViewModel.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
 				D02EC1452B74B70100B67501 /* ReportDrillLevel.swift in Sources */,

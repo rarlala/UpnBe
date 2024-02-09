@@ -16,13 +16,17 @@ struct VideoPlayerView: View {
     }
     
     var body: some View {
-        VideoPlayer(player: viewModel.player)
-            .onAppear {
-                viewModel.play()
-            }
-            .onDisappear {
-                viewModel.pause()
-            }
+        VStack(alignment: .center, spacing: 0) {
+            VideoPlayer(player: viewModel.player)
+                .onAppear {
+                    viewModel.play()
+                }
+                .onDisappear {
+                    viewModel.pause()
+                }
+            
+            VideoControlBar(viewModel: viewModel)
+        }
     }
 }
 
