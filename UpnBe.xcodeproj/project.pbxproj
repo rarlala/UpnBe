@@ -34,6 +34,9 @@
 		D02EC14F2B74CA8100B67501 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC14E2B74CA8100B67501 /* SaveData.swift */; };
 		D02EC1512B74CAC100B67501 /* SaveViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1502B74CAC100B67501 /* SaveViewData.swift */; };
 		D02EC1532B74CBBB00B67501 /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1522B74CBBB00B67501 /* SaveViewModel.swift */; };
+		D02EC1552B74D52A00B67501 /* FilterBoxList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1542B74D52A00B67501 /* FilterBoxList.swift */; };
+		D02EC1572B74DFDA00B67501 /* FilterResetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1562B74DFDA00B67501 /* FilterResetButton.swift */; };
+		D02EC1592B75D13C00B67501 /* FilterConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1582B75D13C00B67501 /* FilterConfirmButton.swift */; };
 		D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */; };
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
@@ -89,6 +92,9 @@
 		D02EC14E2B74CA8100B67501 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		D02EC1502B74CAC100B67501 /* SaveViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewData.swift; sourceTree = "<group>"; };
 		D02EC1522B74CBBB00B67501 /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
+		D02EC1542B74D52A00B67501 /* FilterBoxList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBoxList.swift; sourceTree = "<group>"; };
+		D02EC1562B74DFDA00B67501 /* FilterResetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterResetButton.swift; sourceTree = "<group>"; };
+		D02EC1582B75D13C00B67501 /* FilterConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConfirmButton.swift; sourceTree = "<group>"; };
 		D0BEC30F2B6B79E50050E007 /* UpnBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpnBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnBeApp.swift; sourceTree = "<group>"; };
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,9 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				D02EC1162B71CC7100B67501 /* DTO */,
-				D02EC1182B71CC9A00B67501 /* FilterViewData.swift */,
 				D02EC13C2B7478D200B67501 /* ReportViewData.swift */,
 				D02EC1502B74CAC100B67501 /* SaveViewData.swift */,
+				D02EC1182B71CC9A00B67501 /* FilterViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,10 +149,10 @@
 		D02EC1132B71CC5400B67501 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D02EC1142B71CC6800B67501 /* FilterViewModel.swift */,
 				D02EC13E2B74793700B67501 /* ReportViewModel.swift */,
 				D02EC14C2B74BEB200B67501 /* ShortFormViewModel.swift */,
 				D02EC1522B74CBBB00B67501 /* SaveViewModel.swift */,
+				D02EC1142B71CC6800B67501 /* FilterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -399,8 +405,11 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC3692B70A9210050E007 /* FilterView.swift */,
+				D02EC1562B74DFDA00B67501 /* FilterResetButton.swift */,
+				D02EC1542B74D52A00B67501 /* FilterBoxList.swift */,
 				D02EC10E2B71C86900B67501 /* FilterBox.swift */,
 				D02EC11A2B71D20C00B67501 /* FilterButton.swift */,
+				D02EC1582B75D13C00B67501 /* FilterConfirmButton.swift */,
 			);
 			path = FilterTab;
 			sourceTree = "<group>";
@@ -486,6 +495,7 @@
 				D02EC12D2B73594600B67501 /* SaveTabButton.swift in Sources */,
 				D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */,
 				D0BEC3212B6B7C500050E007 /* Color.swift in Sources */,
+				D02EC1572B74DFDA00B67501 /* FilterResetButton.swift in Sources */,
 				D02EC1532B74CBBB00B67501 /* SaveViewModel.swift in Sources */,
 				D0BEC34E2B6CE56A0050E007 /* OnboardingChoiceView.swift in Sources */,
 				D0BEC3622B70A8F90050E007 /* ReportView.swift in Sources */,
@@ -502,8 +512,10 @@
 				D02EC1342B736D5F00B67501 /* VideoGridView.swift in Sources */,
 				D02EC11E2B72137A00B67501 /* ReportProfileBox.swift in Sources */,
 				D02EC1372B73B36400B67501 /* TopRoundedRectangle.swift in Sources */,
+				D02EC1592B75D13C00B67501 /* FilterConfirmButton.swift in Sources */,
 				D02EC13B2B74740B00B67501 /* ReportDrillCurrentState.swift in Sources */,
 				D0BEC35A2B70A81E0050E007 /* TabsView.swift in Sources */,
+				D02EC1552B74D52A00B67501 /* FilterBoxList.swift in Sources */,
 				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
 				D02EC14D2B74BEB200B67501 /* ShortFormViewModel.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,

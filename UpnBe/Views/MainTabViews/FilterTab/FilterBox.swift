@@ -9,19 +9,16 @@ import SwiftUI
 
 struct FilterBox: View {
     var filterData: FilterData
-    @Binding var selectedFilter: String
+    @Binding var selectedFilter: [String]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text(filterData.name)
                 .font(.notoSansExtraBold16)
                 .foregroundColor(.basic)
                 .padding(.vertical, 11)
             
-            Spacer()
-                .frame(height: 21)
-            
-            LazyVStack {
+            LazyVStack(spacing: 10) {
                 let listCount = filterData.list.count
                 let columnCount = listCount == 4 ? 2 : min(listCount, 3)
                 let rowCount = (listCount + columnCount - 1) / columnCount
@@ -38,14 +35,16 @@ struct FilterBox: View {
                     }
                 }
             }
-            .padding(.bottom, 20)
         }
     }
 }
 
 struct FilterBox_Previews: PreviewProvider {    
     static var previews: some View {
-        FilterBox(filterData: FilterData(name: "test", list: ["test1", "test2", "test3", "test4"]),
-                  selectedFilter: .constant("test1"))
+        ZStack {
+            Color.background
+            FilterBox(filterData: FilterData(name: "test", list: ["test1", "test2", "test3", "test4"]),
+                      selectedFilter: .constant(["text1", "text2"]))
+        }
     }
 }

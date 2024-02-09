@@ -7,8 +7,18 @@
 
 import Foundation
 
-class FilterViewModel {
+class FilterViewModel: ObservableObject {
     private let data = FilterViewData()
+    
+    @Published var division: [String] = []
+    @Published var drill: [String] = []
+    @Published var place: [String] = []
+    @Published var participant: [String] = []
+    
+    func isNotSelected() -> Bool {
+        let selectedDatas = [division, drill, place, participant]
+        return selectedDatas.allSatisfy { $0.isEmpty }
+    }
     
     func getDivisionData() -> FilterData {
         return data.divisionDummyData
@@ -24,5 +34,12 @@ class FilterViewModel {
     
     func getPlaceData() -> FilterData {
         return data.placeDummyData
+    }
+    
+    func resetButtonTapped() {
+        division.removeAll()
+        drill.removeAll()
+        place.removeAll()
+        participant.removeAll()
     }
 }
