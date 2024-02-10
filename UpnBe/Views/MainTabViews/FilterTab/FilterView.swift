@@ -11,7 +11,7 @@ struct FilterView: View {
     @StateObject var viewModel = FilterViewModel()
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Color.black.edgesIgnoringSafeArea(.all)
         
             VStack(alignment: .trailing, spacing: 0) {

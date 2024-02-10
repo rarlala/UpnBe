@@ -8,7 +8,7 @@
 import SwiftUI
 
 class TabObservableObject: ObservableObject {
-    @Published var selectedIndex = 1
+    @Published var selectedIndex = 2
 }
 
 struct TabsView: View {
@@ -16,6 +16,7 @@ struct TabsView: View {
     
     var body: some View {
         TabView(selection: $tab.selectedIndex) {
+            Section {
             ProfileView()
                 .tabItem {
                     Image(tab.selectedIndex == 0 ? "icon-profile-on" : "icon-profile-off")
@@ -41,6 +42,9 @@ struct TabsView: View {
                     Image(tab.selectedIndex == 4 ? "icon-filter-on" : "icon-filter-off")
                 }
                 .tag(4)
+            }
+            .padding(.bottom, 20)
+            .background(Color.black)
         }
     }
 }
