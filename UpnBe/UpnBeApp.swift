@@ -13,7 +13,7 @@ struct UpnBeApp: App {
     @State private var isShowLaunchScreen = true
     
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.black
+        UITabBar.appearance().backgroundColor = .black
     }
     
     var body: some Scene {
@@ -24,7 +24,8 @@ struct UpnBeApp: App {
                 } else {
                     ContentView()
                         .fullScreenCover(isPresented: $isFirstLaunching) {
-                            OnboardingChoiceView(isFirstLaunching: $isFirstLaunching)
+                            OnboardingChoiceView(viewModel: OnboardingChoiceViewModel(),
+                                                 isFirstLaunching: $isFirstLaunching)
                         }
                 }
             }

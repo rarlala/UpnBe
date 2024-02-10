@@ -11,7 +11,7 @@ struct BackgroundColorButton: View {
     var buttonText: String
     var action: () -> Void
     var width: CGFloat
-    var height: CGFloat
+    var height: CGFloat = 50
     var isActive: Binding<Bool>?
     
     var body: some View {
@@ -34,6 +34,6 @@ struct BackgroundColorButton: View {
 
 struct BackgroundColorButton_Previews: PreviewProvider {
     static var previews: some View {
-        BackgroundColorButton(buttonText: "취소", action: { print(1) }, width: 100, height: 50)
+        BackgroundColorButton(buttonText: "취소", action: { print(1) }, width: 100)
     }
 }

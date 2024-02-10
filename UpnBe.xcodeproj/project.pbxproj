@@ -42,6 +42,15 @@
 		D02EC1612B773D8900B67501 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1602B773D8900B67501 /* CustomVideoPlayer.swift */; };
 		D02EC1642B7742B300B67501 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1632B7742B300B67501 /* WebView.swift */; };
 		D02EC1692B7745A100B67501 /* ProfileMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1682B7745A100B67501 /* ProfileMenus.swift */; };
+		D02EC16B2B77559F00B67501 /* OnboardingTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC16A2B77559F00B67501 /* OnboardingTitle.swift */; };
+		D02EC16D2B77563D00B67501 /* OnboardingReadyLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC16C2B77563D00B67501 /* OnboardingReadyLine.swift */; };
+		D02EC1722B7757E000B67501 /* SportListButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1712B7757E000B67501 /* SportListButtons.swift */; };
+		D02EC1742B7759EB00B67501 /* SportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1732B7759EB00B67501 /* SportButton.swift */; };
+		D02EC1762B775C3800B67501 /* OnboardingChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1752B775C3800B67501 /* OnboardingChoiceViewModel.swift */; };
+		D02EC1782B776A9100B67501 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1772B776A9100B67501 /* NextButton.swift */; };
+		D02EC17A2B776FE400B67501 /* OnboardingReadyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC1792B776FE400B67501 /* OnboardingReadyData.swift */; };
+		D02EC17C2B77702400B67501 /* OnboardingReadyViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC17B2B77702400B67501 /* OnboardingReadyViewData.swift */; };
+		D02EC17E2B7770B200B67501 /* OnboardingReadyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EC17D2B7770B200B67501 /* OnboardingReadyViewModel.swift */; };
 		D0BEC3132B6B79E50050E007 /* UpnBeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */; };
 		D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEC3142B6B79E50050E007 /* ContentView.swift */; };
 		D0BEC3172B6B79E60050E007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BEC3162B6B79E60050E007 /* Assets.xcassets */; };
@@ -105,6 +114,15 @@
 		D02EC1602B773D8900B67501 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		D02EC1632B7742B300B67501 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D02EC1682B7745A100B67501 /* ProfileMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenus.swift; sourceTree = "<group>"; };
+		D02EC16A2B77559F00B67501 /* OnboardingTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTitle.swift; sourceTree = "<group>"; };
+		D02EC16C2B77563D00B67501 /* OnboardingReadyLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReadyLine.swift; sourceTree = "<group>"; };
+		D02EC1712B7757E000B67501 /* SportListButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportListButtons.swift; sourceTree = "<group>"; };
+		D02EC1732B7759EB00B67501 /* SportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportButton.swift; sourceTree = "<group>"; };
+		D02EC1752B775C3800B67501 /* OnboardingChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChoiceViewModel.swift; sourceTree = "<group>"; };
+		D02EC1772B776A9100B67501 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		D02EC1792B776FE400B67501 /* OnboardingReadyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReadyData.swift; sourceTree = "<group>"; };
+		D02EC17B2B77702400B67501 /* OnboardingReadyViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReadyViewData.swift; sourceTree = "<group>"; };
+		D02EC17D2B7770B200B67501 /* OnboardingReadyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReadyViewModel.swift; sourceTree = "<group>"; };
 		D0BEC30F2B6B79E50050E007 /* UpnBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpnBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BEC3122B6B79E50050E007 /* UpnBeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnBeApp.swift; sourceTree = "<group>"; };
 		D0BEC3142B6B79E50050E007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +170,7 @@
 				D02EC13C2B7478D200B67501 /* ReportViewData.swift */,
 				D02EC1502B74CAC100B67501 /* SaveViewData.swift */,
 				D02EC1182B71CC9A00B67501 /* FilterViewData.swift */,
+				D02EC17B2B77702400B67501 /* OnboardingReadyViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +178,8 @@
 		D02EC1132B71CC5400B67501 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D02EC1752B775C3800B67501 /* OnboardingChoiceViewModel.swift */,
+				D02EC17D2B7770B200B67501 /* OnboardingReadyViewModel.swift */,
 				D02EC13E2B74793700B67501 /* ReportViewModel.swift */,
 				D02EC14C2B74BEB200B67501 /* ShortFormViewModel.swift */,
 				D02EC15A2B75FC5E00B67501 /* VideoPlayerViewModel.swift */,
@@ -174,6 +195,7 @@
 				D02EC1102B71C89900B67501 /* FilterData.swift */,
 				D02EC1402B74AAFC00B67501 /* ReportData.swift */,
 				D02EC14E2B74CA8100B67501 /* SaveData.swift */,
+				D02EC1792B776FE400B67501 /* OnboardingReadyData.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -216,6 +238,34 @@
 				D02EC1682B7745A100B67501 /* ProfileMenus.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		D02EC16E2B7756B400B67501 /* OnboardingChoice */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */,
+				D02EC1712B7757E000B67501 /* SportListButtons.swift */,
+				D02EC1732B7759EB00B67501 /* SportButton.swift */,
+				D02EC1772B776A9100B67501 /* NextButton.swift */,
+			);
+			path = OnboardingChoice;
+			sourceTree = "<group>";
+		};
+		D02EC16F2B7756C800B67501 /* OnboardingReady */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEC3522B70737C0050E007 /* OnboardingReadyView.swift */,
+				D02EC16C2B77563D00B67501 /* OnboardingReadyLine.swift */,
+			);
+			path = OnboardingReady;
+			sourceTree = "<group>";
+		};
+		D02EC1702B7756FC00B67501 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D02EC16A2B77559F00B67501 /* OnboardingTitle.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		D0BEC3062B6B79E50050E007 = {
@@ -356,8 +406,9 @@
 			isa = PBXGroup;
 			children = (
 				D0BEC34F2B6D071D0050E007 /* Enum */,
-				D0BEC34D2B6CE56A0050E007 /* OnboardingChoiceView.swift */,
-				D0BEC3522B70737C0050E007 /* OnboardingReadyView.swift */,
+				D02EC1702B7756FC00B67501 /* Common */,
+				D02EC16E2B7756B400B67501 /* OnboardingChoice */,
+				D02EC16F2B7756C800B67501 /* OnboardingReady */,
 			);
 			path = OnboardingViews;
 			sourceTree = "<group>";
@@ -518,13 +569,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02EC1112B71C89900B67501 /* FilterData.swift in Sources */,
+				D02EC17A2B776FE400B67501 /* OnboardingReadyData.swift in Sources */,
 				D0BEC3252B6B82820050E007 /* Font.swift in Sources */,
 				D0BEC34A2B6CE0010050E007 /* LaunchView.swift in Sources */,
 				D0BEC3342B6B89420050E007 /* TwoButtonBottomSheet.swift in Sources */,
 				D02EC1282B73208500B67501 /* ShortFormButtons.swift in Sources */,
+				D02EC17E2B7770B200B67501 /* OnboardingReadyViewModel.swift in Sources */,
 				D0BEC3152B6B79E50050E007 /* ContentView.swift in Sources */,
 				D02EC12D2B73594600B67501 /* SaveTabButton.swift in Sources */,
 				D02EC1692B7745A100B67501 /* ProfileMenus.swift in Sources */,
+				D02EC1742B7759EB00B67501 /* SportButton.swift in Sources */,
+				D02EC16B2B77559F00B67501 /* OnboardingTitle.swift in Sources */,
 				D0BEC3392B6CBDC50050E007 /* Color1Button.swift in Sources */,
 				D0BEC3212B6B7C500050E007 /* Color.swift in Sources */,
 				D02EC1572B74DFDA00B67501 /* FilterResetButton.swift in Sources */,
@@ -552,6 +607,7 @@
 				D02EC1552B74D52A00B67501 /* FilterBoxList.swift in Sources */,
 				D0BEC36F2B70C6E20050E007 /* ProgressBar.swift in Sources */,
 				D02EC15D2B7605CB00B67501 /* VideoControlBar.swift in Sources */,
+				D02EC17C2B77702400B67501 /* OnboardingReadyViewData.swift in Sources */,
 				D02EC14D2B74BEB200B67501 /* ShortFormViewModel.swift in Sources */,
 				D0BEC33B2B6CBDD00050E007 /* BackgroundColorButton.swift in Sources */,
 				D02EC1452B74B70100B67501 /* ReportDrillLevel.swift in Sources */,
@@ -563,15 +619,19 @@
 				D02EC1202B72143300B67501 /* ProfileBox.swift in Sources */,
 				D02EC1192B71CC9A00B67501 /* FilterViewData.swift in Sources */,
 				D02EC12F2B735A0F00B67501 /* SaveTabBar.swift in Sources */,
+				D02EC1722B7757E000B67501 /* SportListButtons.swift in Sources */,
 				D02EC14F2B74CA8100B67501 /* SaveData.swift in Sources */,
 				D02EC1242B72214E00B67501 /* ProfileMenuLine.swift in Sources */,
 				D0BEC3532B70737C0050E007 /* OnboardingReadyView.swift in Sources */,
+				D02EC16D2B77563D00B67501 /* OnboardingReadyLine.swift in Sources */,
 				D0BEC3452B6CCBD20050E007 /* CommonTextField.swift in Sources */,
 				D02EC1222B721E2C00B67501 /* ProfileMenuList.swift in Sources */,
 				D0BEC3422B6CC9BE0050E007 /* SheetModifier.swift in Sources */,
+				D02EC1762B775C3800B67501 /* OnboardingChoiceViewModel.swift in Sources */,
 				D02EC1512B74CAC100B67501 /* SaveViewData.swift in Sources */,
 				D0BEC3672B70A90F0050E007 /* SaveView.swift in Sources */,
 				D02EC10F2B71C86900B67501 /* FilterBox.swift in Sources */,
+				D02EC1782B776A9100B67501 /* NextButton.swift in Sources */,
 				D02EC1612B773D8900B67501 /* CustomVideoPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isShowSheet: Bool = false
-
     var body: some View {
         TabsView()
             .environmentObject(TabObservableObject())

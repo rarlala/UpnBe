@@ -38,8 +38,7 @@ struct OneButtonBottomSheet: View {
                     Color1Button(
                         buttonText: buttonText,
                         action: { dismiss() },
-                        width: geometry.size.width - 30,
-                        height: 50
+                        width: geometry.size.width - 30
                     )
                     .padding(.bottom, 10)
                 }

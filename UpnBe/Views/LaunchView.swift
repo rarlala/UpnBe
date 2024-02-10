@@ -10,12 +10,11 @@ import SwiftUI
 struct LaunchView: View {
     var body: some View {
         ZStack {
-            Color.black
+            Color.black.edgesIgnoringSafeArea(.all)
             Image("Logo")
                 .resizable()
                 .frame(width: 159, height: 73)
         }
-        .ignoresSafeArea()
     }
 }
 

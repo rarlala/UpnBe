@@ -53,15 +53,13 @@ struct TwoButtonBottomSheet: View {
                             BackgroundColorButton(
                                 buttonText: cancelButtonText,
                                 action: cancelAction,
-                                width: (geometry.size.width - 40) / 2,
-                                height: 50
+                                width: (geometry.size.width - 40) / 2
                             )
 
                             Color1Button(
                                 buttonText: confirmButtonText,
                                 action: confirmAction,
-                                width: (geometry.size.width - 40) / 2,
-                                height: 50
+                                width: (geometry.size.width - 40) / 2
                             )
                         }
                         .padding(.bottom, 10)

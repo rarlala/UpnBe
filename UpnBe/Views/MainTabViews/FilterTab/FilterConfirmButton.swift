@@ -14,8 +14,7 @@ struct FilterConfirmButton: View {
         GeometryReader { geometry in
             Color1Button(buttonText: "적용하기",
                          action: { tab.selectedIndex = 2 },
-                         width: geometry.size.width,
-                         height: 50)
+                         width: geometry.size.width)
         }
         .frame(height: 50)
         .padding(.top, 15)

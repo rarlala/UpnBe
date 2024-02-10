@@ -11,7 +11,7 @@ struct Color1Button: View {
     var buttonText: String
     var action: () -> Void
     var width: CGFloat
-    var height: CGFloat
+    var height: CGFloat = 50
     
     var body: some View {
         Button {
@@ -32,6 +32,6 @@ struct Color1Button: View {
 
 struct Color1Button_Previews: PreviewProvider {
     static var previews: some View {
-        Color1Button(buttonText: "확인", action: { print(1) }, width: 100, height: 50)
+        Color1Button(buttonText: "확인", action: { print(1) }, width: 100)
     }
 }
