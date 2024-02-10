@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        ZStack {
-            Color.black.edgesIgnoringSafeArea(.all)
-            
-            VStack(spacing: 0) {
-                ProfileBox()
-                ProfileMenuList()
+        NavigationView {
+            ZStack {
+                Color.black.edgesIgnoringSafeArea(.all)
+                
+                VStack(spacing: 0) {
+                    ProfileBox()
+                    ProfileMenuList()
+                }
             }
         }
     }

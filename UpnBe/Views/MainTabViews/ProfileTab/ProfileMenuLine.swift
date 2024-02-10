@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ProfileMenuLine: View {
-    var cellText: String
+    var menuName: String
+    var moveUrl: String
     
     var body: some View {
         HStack(alignment: .top) {
-            Text(cellText)
-                .font(.notoSansMedium18)
-                .foregroundColor(.background5)
-                .padding(.leading, 5)
-            
-            Spacer()
-            
-            Image(systemName: "chevron.right")
-                .foregroundColor(.basic)
+            NavigationLink {
+                WebView(urlToLoad: moveUrl)
+            } label: {
+                Text(menuName)
+                    .font(.notoSansMedium18)
+                    .foregroundColor(.background5)
+                    .padding(.leading, 5)
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.basic)
+            }
         }
         .padding(.bottom, 10)
         .background(
@@ -37,7 +42,8 @@ struct ProfileMenuLine_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.background
-            ProfileMenuLine(cellText: "테스트")
+            ProfileMenuLine(menuName: "테스트",
+                            moveUrl: "https://google.com")
         }
     }
 }

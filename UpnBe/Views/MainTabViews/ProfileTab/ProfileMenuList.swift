@@ -10,14 +10,15 @@ import SwiftUI
 struct ProfileMenuList: View {
     var body: some View {
         VStack {
-            ProfileMenuLine(cellText: "숏츠 영상 등록하기")
-            ProfileMenuLine(cellText: "카카오톡 문의하기")
-            ProfileMenuLine(cellText: "자주 묻는 질문")
-            ProfileMenuLine(cellText: "공지사항")
+            ForEach(ProfileMenus.allCases, id: \.self) { profile in
+                ProfileMenuLine(menuName: profile.name,
+                                moveUrl: profile.moveUrl)
+            }
             Spacer()
         }
         .background(Color.background)
         .scrollContentBackground(.hidden)
+        
     }
 }
 
