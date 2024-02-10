@@ -17,7 +17,7 @@ struct VideoPlayerView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            VideoPlayer(player: viewModel.player)
+            CustomVideoPlayer(player: viewModel.player)
                 .onAppear {
                     viewModel.play()
                 }
