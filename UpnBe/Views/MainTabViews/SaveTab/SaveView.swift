@@ -16,7 +16,17 @@ struct SaveView: View {
 
             VStack {
                 SaveTabBar(viewModel: viewModel)
-                VideoGridView(viewModel: viewModel)
+                
+                if viewModel.getData().isEmpty {
+                    Text(viewModel.getEmptyText())
+                        .font(.notoSansExtraBold16)
+                        .foregroundColor(.basic)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 142)
+                        
+                } else {
+                    VideoGridView(viewModel: viewModel)
+                }
                 Spacer()
             }
             .padding(.top, 36)

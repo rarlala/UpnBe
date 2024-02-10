@@ -18,11 +18,8 @@ struct VideoGridView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
-                if viewModel.getData().isEmpty {
-                    Text("11")
-                } else { ForEach(viewModel.getData().indices, id: \.self) { index in
+                ForEach(viewModel.getData().indices, id: \.self) { index in
                     SaveVideoView(image: viewModel.getData()[index].imageName)
-                    }
                 }
             }
             .padding(.horizontal, 12)
