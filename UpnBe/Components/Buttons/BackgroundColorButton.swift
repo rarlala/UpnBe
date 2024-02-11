@@ -21,7 +21,7 @@ struct BackgroundColorButton: View {
             Spacer()
             Text(buttonText)
                 .multilineTextAlignment(.center)
-                .font(.notoSansExtraBold18)
+                .font(.Heading3)
                 .foregroundColor(isActive?.wrappedValue == true ? .background : .background5)
             Spacer()
         }

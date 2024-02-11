@@ -23,7 +23,7 @@ struct TwoButtonBottomSheet: View {
             VStack {
                 Spacer()
                 Text(text)
-                    .font(.notoSansExtraBold16)
+                    .font(.Heading4)
                     .foregroundColor(.basic)
                     .multilineTextAlignment(.center)
                 Spacer()

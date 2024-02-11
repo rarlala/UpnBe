@@ -26,7 +26,7 @@ struct ShortFormButton: View {
                     .resizable()
                     .frame(width: 40, height: 40)
                 Text(buttonText)
-                    .font(.notoSansExtraBold12)
+                    .font(.Heading6)
                     .foregroundColor(.basic)
             }
         }

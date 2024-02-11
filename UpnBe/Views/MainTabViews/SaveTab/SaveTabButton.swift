@@ -20,7 +20,7 @@ struct SaveTabButton: View {
         } label: {
             Spacer()
             Text(buttonText)
-                .font(.notoSansExtraBold16)
+                .font(.Heading4)
                 .foregroundColor(isActive ? .basic : .background5)
                 .padding(.bottom, 10)
                 .background(

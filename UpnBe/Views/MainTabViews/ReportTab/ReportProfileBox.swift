@@ -17,29 +17,29 @@ struct ReportProfileBox: View {
             
             VStack(alignment: .leading, spacing: 11) {
                 Text("민첩한곰돌이")
-                    .font(.notoSansExtraBold20)
+                    .font(.Heading2)
                     .foregroundColor(.background)
                 
                 HStack() {
                     VStack(alignment: .leading, spacing: 5) {
                         Text("레벨")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                         
                         Text("디비전")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                         
                         Text("소속")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                     }
                     VStack(alignment: .leading, spacing: 5) {
                         Text("12")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                         
                         Text("Rookie")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                         
                         Text("지구대학교")
-                            .font(.notoSansExtraBold18)
+                            .font(.Heading3)
                     }
                 }
             }

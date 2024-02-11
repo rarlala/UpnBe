@@ -13,7 +13,7 @@ struct ReportDrillCurrentState: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("드릴 가능UP 현황")
-                .font(.notoSansExtraBold16)
+                .font(.Heading4)
                 .foregroundColor(.basic)
             
             VStack() {
@@ -26,11 +26,11 @@ struct ReportDrillCurrentState: View {
                         
                         HStack {
                             Text("\(data.currentCount)")
-                                .font(.notoSansMedium12)
+                                .font(.Paragraph5)
                                 .foregroundColor(.background5)
                             
                             Text(" / \(data.maxCount)")
-                                .font(.notoSansMedium12)
+                                .font(.Paragraph5)
                                 .foregroundColor(.background3)
                         }
                     }

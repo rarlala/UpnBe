@@ -33,7 +33,7 @@ struct OnboardingReadyView: View {
                     
                     Text("내 레벨을 알기까지 걸리는 시간은 단 2분\n단 20개의 영상을 보고 선택만 하세요!")
                         .foregroundColor(.basic)
-                        .font(.notoSansMedium14)
+                        .font(.Paragraph4)
                         .multilineTextAlignment(.center)
                         .frame(height: 44)
                         .padding(.bottom, 110)

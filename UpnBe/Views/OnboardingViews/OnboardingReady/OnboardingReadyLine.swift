@@ -18,7 +18,7 @@ struct OnboardingReadyLine: View {
                 .frame(width: 40, height: 40)
             
             Text(text)
-                .font(.notoSansExtraBold14)
+                .font(.Heading5)
                 .foregroundColor(.basic)
         }
         .padding(.bottom, 44)

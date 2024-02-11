@@ -17,7 +17,7 @@ struct ProfileMenuLine: View {
                 WebView(urlToLoad: moveUrl)
             } label: {
                 Text(menuName)
-                    .font(.notoSansMedium18)
+                    .font(.Paragraph2)
                     .foregroundColor(.background5)
                     .padding(.leading, 5)
                 

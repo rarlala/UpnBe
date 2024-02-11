@@ -12,7 +12,7 @@ struct CommonTextField: View {
     
     var body: some View {
         TextField("", text: $text, prompt: Text("입력하세요").foregroundColor(.basic))
-            .font(.notoSansExtraBold16)
+            .font(.Heading4)
             .multilineTextAlignment(.center)
             .padding(EdgeInsets(top: 16, leading: 7, bottom: 16, trailing: 7))
             .background(Color.background2)

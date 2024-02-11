@@ -20,7 +20,7 @@ struct OneButtonBottomSheet: View {
             VStack(spacing: 10) {
                 Spacer()
                 Text(text)
-                    .font(.notoSansExtraBold16)
+                    .font(.Heading4)
                     .foregroundColor(.basic)
                 Spacer()
             }

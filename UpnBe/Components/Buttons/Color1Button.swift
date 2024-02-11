@@ -20,7 +20,7 @@ struct Color1Button: View {
             Spacer()
             Text(buttonText)
                 .multilineTextAlignment(.center)
-                .font(.notoSansExtraBold18)
+                .font(.Heading3)
                 .foregroundColor(.background)
             Spacer()
         }

@@ -17,15 +17,15 @@ struct ProfileBox: View {
             
             VStack(alignment: .leading, spacing: 5) {
                 Text("민첩한곰돌이")
-                    .font(.notoSansExtraBold20)
+                    .font(.Heading2)
                     .foregroundColor(.background)
                 
                 Text("12 개월")
-                    .font(.notoSansExtraBold20)
+                    .font(.Heading2)
                     .foregroundColor(.background)
                 
                 Text("혼자서 | 기술훈련")
-                    .font(.notoSansExtraBold20)
+                    .font(.Heading2)
                     .foregroundColor(.background)
             }
             
@@ -46,7 +46,7 @@ struct ProfileBox: View {
                     // TODO: 버튼 클릭 시 기능 구현
                 } label: {
                     Text("수정")
-                        .font(.notoSansExtraBold14)
+                        .font(.Heading5)
                         .foregroundColor(.background2)
                         .underline()
                 }

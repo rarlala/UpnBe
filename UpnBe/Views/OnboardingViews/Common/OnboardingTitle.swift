@@ -12,7 +12,7 @@ struct OnboardingTitle: View {
     
     var body: some View {
         Text(title)
-            .font(.notoSansExtraBold24)
+            .font(.Heading1)
             .foregroundColor(.color1)
             .multilineTextAlignment(.center)
             .padding(.vertical, 18)

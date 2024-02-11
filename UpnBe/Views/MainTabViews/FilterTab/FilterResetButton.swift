@@ -15,7 +15,7 @@ struct FilterResetButton: View {
             viewModel.resetButtonTapped()
         } label: {
             Text("재설정")
-                .font(.notoSansMedium12)
+                .font(.Paragraph5)
                 .foregroundColor(.background4)
                 .underline()
         }

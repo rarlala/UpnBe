@@ -14,7 +14,7 @@ struct FilterBox: View {
     var body: some View {
         VStack(spacing: 10) {
             Text(filterData.name)
-                .font(.notoSansExtraBold16)
+                .font(.Heading4)
                 .foregroundColor(.basic)
                 .padding(.vertical, 11)
             

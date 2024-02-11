@@ -13,7 +13,7 @@ struct ReportDrillLevel: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("드릴별 레벨")
-                .font(.notoSansExtraBold16)
+                .font(.Heading4)
                 .foregroundColor(.basic)
             
             HStack {
@@ -21,11 +21,11 @@ struct ReportDrillLevel: View {
                     let data = datas[index]
                     VStack(spacing: 5) {
                         Text("\(data.text)")
-                            .font(.notoSansMedium16)
+                            .font(.Heading4)
                             .foregroundColor(.basic)
                         
                         Text("\(data.currentCount)")
-                            .font(.notoSansExtraBold20)
+                            .font(.Heading2)
                             .foregroundColor(.color1)
                     }
                     

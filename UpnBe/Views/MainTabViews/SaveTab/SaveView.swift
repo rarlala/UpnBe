@@ -19,7 +19,7 @@ struct SaveView: View {
                 
                 if viewModel.getData().isEmpty {
                     Text(viewModel.getEmptyText())
-                        .font(.notoSansExtraBold16)
+                        .font(.Heading4)
                         .foregroundColor(.basic)
                         .multilineTextAlignment(.center)
                         .padding(.top, 142)

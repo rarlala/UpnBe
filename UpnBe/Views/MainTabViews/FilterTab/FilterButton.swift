@@ -23,7 +23,7 @@ struct FilterButton: View {
         } label: {
             Spacer()
             Text(buttonText)
-                .font(.notoSansExtraBold16)
+                .font(.Heading4)
                 .foregroundColor(isSelected ? .background : .background5)
             Spacer()
         }
