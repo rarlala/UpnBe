@@ -33,7 +33,6 @@ struct SportList: View {
                                     confirmAction: viewModel.popupButtonTapped,
                                     cancelAction: viewModel.popupButtonTapped
                                 )
-                                .setSheet()
                             }
                         }
                 }

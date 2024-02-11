@@ -15,7 +15,7 @@ struct OneButtonBottomSheet: View {
     
     var body: some View {
         ZStack {
-            Color.background
+            Color.background.edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 10) {
                 Spacer()
@@ -46,14 +46,8 @@ struct OneButtonBottomSheet: View {
                 .padding(.bottom, 10)
             }
         }
-        .ignoresSafeArea()
         .presentationDetents([.fraction(370 / 740)])
-    }
-}
-
-extension OneButtonBottomSheet {
-    func setSheet() -> some View {
-        self.modifier(SheetModifier())
+        .background(Color.background)
     }
 }
 

@@ -22,7 +22,7 @@ struct OnboardingReadyView: View {
     
     var body: some View {
         ZStack {
-            Color.background
+            Color.background.edgesIgnoringSafeArea(.all)
             
             GeometryReader { geometry in
                 VStack {
@@ -54,7 +54,6 @@ struct OnboardingReadyView: View {
                 }
             }
         }
-        .ignoresSafeArea()
     }
 }
 

@@ -20,75 +20,64 @@ struct TwoButtonBottomSheet: View {
     
     var body: some View {
         ZStack {
-            Color.background.opacity(0.95)
-            
-            ZStack {
-                Color.background
-
-                VStack {
-                    Spacer()
-                    Text(text)
-                        .font(.notoSansExtraBold16)
-                        .foregroundColor(.basic)
-                        .multilineTextAlignment(.center)
-                    Spacer()
-
-                    if isShowTextField {
-                        CommonTextField(text: $inputText)
-                            .padding(.horizontal, 15)
-                        Spacer().frame(height: 110)
-                    }
-                }
-
-                GeometryReader { geometry in
-                    VStack {
-                        Rectangle()
-                            .fill(Color.basic)
-                            .frame(width: 50, height: 2)
-                            .padding(20)
-                            .cornerRadius(2)
-
-                        Spacer()
-                        HStack(spacing: 10) {
-                            BackgroundColorButton(
-                                buttonText: cancelButtonText,
-                                action: cancelAction,
-                                width: (geometry.size.width - 40) / 2
-                            )
-
-                            Color1Button(
-                                buttonText: confirmButtonText,
-                                action: confirmAction,
-                                width: (geometry.size.width - 40) / 2
-                            )
-                        }
-                        .padding(.bottom, 10)
-                    }
-                    .padding(.horizontal, 15)
-                    .padding(.bottom, 10)
+            VStack {
+                Spacer()
+                Text(text)
+                    .font(.notoSansExtraBold16)
+                    .foregroundColor(.basic)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                
+                if isShowTextField {
+                    CommonTextField(text: $inputText)
+                        .padding(.horizontal, 15)
+                    Spacer().frame(height: 110)
                 }
             }
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10))
-            .cornerRadius(30)
+            
+            GeometryReader { geometry in
+                VStack {
+                    Rectangle()
+                        .fill(Color.basic)
+                        .frame(width: 50, height: 2)
+                        .padding(20)
+                        .cornerRadius(2)
+                    
+                    Spacer()
+                    HStack(spacing: 10) {
+                        BackgroundColorButton(
+                            buttonText: cancelButtonText,
+                            action: cancelAction,
+                            width: (geometry.size.width - 40) / 2
+                        )
+                        
+                        Color1Button(
+                            buttonText: confirmButtonText,
+                            action: confirmAction,
+                            width: (geometry.size.width - 40) / 2
+                        )
+                    }
+                    .padding(.bottom, 10)
+                }
+                .padding(.horizontal, 15)
+                .padding(.bottom, 10)
+            }
         }
-        .ignoresSafeArea()
         .presentationDetents([.fraction(370 / 740)])
-    }
-}
-
-extension TwoButtonBottomSheet {
-    func setSheet() -> some View {
-        self.modifier(SheetModifier())
+        .background(Color.background)
     }
 }
 
 struct TwoButtonBottomSheet_Previews: PreviewProvider {
     static var previews: some View {
-        TwoButtonBottomSheet(
-            text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
-            confirmButtonText: "확인",
-            cancelButtonText: "취소",
-            confirmAction: { print(1) }
-        )
+        ZStack {
+            Color.background
+            TwoButtonBottomSheet(
+                text: "회원가입 중간에 이탈할 경우\n작성한 내용은 모두 사라져요.\n지금 이탈하시겠어요?",
+                confirmButtonText: "확인",
+                cancelButtonText: "취소",
+                confirmAction: { print(1) }
+            )
+        }
     }
 }
