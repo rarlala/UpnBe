@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-class OnboardingChoiceViewModel: ObservableObject {
+final class OnboardingChoiceViewModel: ObservableObject {
     @Published var isActive: Bool = false
     @Published var isShowPopup: Bool = false
     @Published var isNextButtonTapped: Bool = false
     @Published var isPopupButtonTapped: Bool = false
-    @Published var selectedSport: SportsType?
+    @Published var selectedSports: SportsType?
     
-    func sportButtonTapped(sport: SportsType) {
-        selectedSport = sport
+    func sportsButtonTapped(sports: SportsType) {
+        selectedSports = sports
         
-        if selectedSport == .soccer {
+        if selectedSports == .soccer {
             isActive = true
         } else {
             isActive = false

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ReportViewModel {
+struct ReportViewModel {
     private let data = ReportViewData()
     
     func getData() -> [ReportData] {

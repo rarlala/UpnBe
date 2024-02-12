@@ -16,7 +16,7 @@ struct OnboardingReadyView: View {
         self._isFirstLaunching = isFirstLaunching
     }
     
-    func confirmButtonTapped() {
+    private func confirmButtonTapped() {
         isFirstLaunching.toggle()
     }
     
@@ -38,9 +38,8 @@ struct OnboardingReadyView: View {
                         .frame(height: 44)
                         .padding(.bottom, 110)
                     
-                    ForEach(viewModel.getData(), id: \.self.icon) { data in
-                        OnboardingReadyLine(icon: data.icon, text: data.text)
-                    }
+                    
+                    OnboardingReadyDesc(viewModel: viewModel)
                     
                     Spacer()
                     

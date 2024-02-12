@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct OnboardingChoiceView: View {
-    @ObservedObject var viewModel: OnboardingChoiceViewModel
-    @Binding var isFirstLaunching: Bool
+    @ObservedObject private var viewModel: OnboardingChoiceViewModel
+    @Binding private var isFirstLaunching: Bool
     
     init(viewModel: OnboardingChoiceViewModel, isFirstLaunching: Binding<Bool>) {
         self.viewModel = viewModel
@@ -25,7 +25,7 @@ struct OnboardingChoiceView: View {
                     .padding(.top, 100)
                     .padding(.bottom, 80)
                 
-                SportList(viewModel: viewModel)
+                SportsListButtons(viewModel: viewModel)
                 
                 Spacer()
                 

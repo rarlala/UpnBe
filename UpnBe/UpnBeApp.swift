@@ -22,11 +22,12 @@ struct UpnBeApp: App {
                 if isShowLaunchScreen {
                     LaunchView()
                 } else {
-                    ContentView()
-                        .fullScreenCover(isPresented: $isFirstLaunching) {
-                            OnboardingChoiceView(viewModel: OnboardingChoiceViewModel(),
-                                                 isFirstLaunching: $isFirstLaunching)
-                        }
+                    if isFirstLaunching {
+                        OnboardingChoiceView(viewModel: OnboardingChoiceViewModel(),
+                                             isFirstLaunching: $isFirstLaunching)
+                    } else {
+                        ContentView()
+                    }
                 }
             }
             .onAppear {

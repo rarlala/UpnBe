@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ShortFormViewModel: ObservableObject {
+final class ShortFormViewModel: ObservableObject {
     @Published var shortStatus: ShortStatus?
     @Published var isUpButtonTapped: Bool = false
     @Published var isBeButtonTapped: Bool = false
