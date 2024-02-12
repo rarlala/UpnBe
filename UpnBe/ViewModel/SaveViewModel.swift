@@ -8,9 +8,9 @@
 import SwiftUI
 
 class SaveViewModel: ObservableObject {
-    @Published var tabIndex: Int = 0
-    
     private let data = SaveViewData()
+    
+    @Published var tabIndex: Int = 0
     
     func getData() -> [SaveData] {
         if tabIndex == 0 {

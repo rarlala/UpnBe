@@ -11,18 +11,22 @@ import Combine
 struct VideoControlBar: View {
     @ObservedObject var viewModel: VideoPlayerViewModel
     @State private var isDragging = false
+    @State private var tempTime: Double = 0
     
     var body: some View {
-        let playingPercent = viewModel.currentTime / viewModel.duration
+        let playingPercent = max(0, viewModel.currentTime / viewModel.duration)
         
         ZStack(alignment: .center) {
             GeometryReader { geometry in
+                let currentPlayingWidth = geometry.size.width * playingPercent
+                
                 let drag = DragGesture()
                     .onChanged { value in
                         isDragging = true
-                        viewModel.currentTime = min(max(0, Double(value.location.x / geometry.size.width) * viewModel.duration), viewModel.duration)
+                        tempTime = max(0, Double(value.location.x / geometry.size.width) * viewModel.duration)
                     }
                     .onEnded { _ in
+                        viewModel.moveTime(seconds: tempTime)
                         isDragging = false
                     }
                 
@@ -31,20 +35,14 @@ struct VideoControlBar: View {
                     .foregroundColor(.background4)
                 
                 Rectangle()
-                    .frame(width: geometry.size.width * playingPercent,
-                           height: 2)
+                    .frame(width: currentPlayingWidth, height: 2)
                     .foregroundColor(.color2)
                 
                 Ellipse()
                     .frame(width: 10, height: 10)
-                    .position(x: geometry.size.width * playingPercent)
+                    .position(x: currentPlayingWidth)
                     .foregroundColor(.background5)
                     .gesture(drag)
-                    .onReceive(Just(viewModel.currentTime)) { seconds in
-                        if isDragging {
-                            viewModel.moveTime(seconds: seconds)
-                        }
-                    }
             }
             .frame(height: 2)
         }

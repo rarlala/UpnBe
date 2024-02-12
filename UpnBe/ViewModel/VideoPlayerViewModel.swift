@@ -8,12 +8,12 @@
 import SwiftUI
 import AVKit
 
-class VideoPlayerViewModel: ObservableObject {
+final class VideoPlayerViewModel: ObservableObject {
     let player: AVPlayer
+    private var timeObserver: Any?
+    
     @Published var currentTime: TimeInterval = 0
     @Published var duration: Float64 = 0
-    
-    private var timeObserver: Any?
     
     init(url: URL) {
         self.player = AVPlayer(url: url)
