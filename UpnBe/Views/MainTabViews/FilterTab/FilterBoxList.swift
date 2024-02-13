@@ -12,13 +12,13 @@ struct FilterBoxList: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            FilterBox(filterData: viewModel.getDivisionData(),
+            FilterBox(filterData: viewModel.getFilterData(for: .division),
                       selectedFilter: $viewModel.division)
-            FilterBox(filterData: viewModel.getDrillData(),
+            FilterBox(filterData: viewModel.getFilterData(for: .drill),
                       selectedFilter: $viewModel.drill)
-            FilterBox(filterData: viewModel.getPlaceData(),
+            FilterBox(filterData: viewModel.getFilterData(for: .place),
                       selectedFilter: $viewModel.place)
-            FilterBox(filterData: viewModel.getParticipantData(),
+            FilterBox(filterData: viewModel.getFilterData(for: .participant),
                       selectedFilter: $viewModel.participant)
         }
     }

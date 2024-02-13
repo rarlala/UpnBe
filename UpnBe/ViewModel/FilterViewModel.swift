@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum FilterType {
+    case division, drill, place, participant
+}
+
 class FilterViewModel: ObservableObject {
     private let data = FilterViewData()
     
@@ -20,20 +24,17 @@ class FilterViewModel: ObservableObject {
         return selectedDatas.allSatisfy { $0.isEmpty }
     }
     
-    func getDivisionData() -> FilterData {
-        return data.divisionDummyData
-    }
-    
-    func getDrillData() -> FilterData {
-        return data.drillDummyData
-    }
-    
-    func getParticipantData() -> FilterData {
-        return data.participantDummyData
-    }
-    
-    func getPlaceData() -> FilterData {
-        return data.placeDummyData
+    func getFilterData(for type: FilterType) -> FilterData {
+        switch type {
+        case .division:
+            return data.divisionDummyData
+        case .drill:
+            return data.drillDummyData
+        case .participant:
+            return data.participantDummyData
+        case .place:
+            return data.placeDummyData
+        }
     }
     
     func resetButtonTapped() {
