@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingReadyDesc: View {
     var viewModel: OnboardingReadyViewModel
+    var geometry: GeometryProxy
     
     var body: some View {
         ForEach(viewModel.getData(), id: \.self.icon) { data in
@@ -21,13 +22,15 @@ struct OnboardingReadyDesc: View {
                     .font(.Heading5)
                     .foregroundColor(.basic)
             }
-            .padding(.bottom, 44)
+            .padding(.bottom, geometry.size.height * (44 / 740))
         }
     }
 }
 
 struct OnboardingReadyDesc_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingReadyDesc(viewModel: OnboardingReadyViewModel())
+        GeometryReader { geometry in
+            OnboardingReadyDesc(viewModel: OnboardingReadyViewModel(), geometry: geometry)
+        }
     }
 }

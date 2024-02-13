@@ -18,7 +18,7 @@ struct FilterView: View {
                 FilterResetButton(viewModel: viewModel)
                     .opacity(viewModel.isNotSelected() ? 0 : 1)
                 FilterBoxList(viewModel: viewModel)
-                    .padding(.bottom, 25)
+                Spacer()
                 FilterConfirmButton()
             }
             .padding(10)

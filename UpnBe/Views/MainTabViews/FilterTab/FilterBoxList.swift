@@ -11,13 +11,16 @@ struct FilterBoxList: View {
     @ObservedObject var viewModel: FilterViewModel
     
     var body: some View {
-        VStack(spacing: 25) {
+        VStack {
             FilterBox(filterData: viewModel.getFilterData(for: .division),
                       selectedFilter: $viewModel.division)
+            Spacer()
             FilterBox(filterData: viewModel.getFilterData(for: .drill),
                       selectedFilter: $viewModel.drill)
+            Spacer()
             FilterBox(filterData: viewModel.getFilterData(for: .place),
                       selectedFilter: $viewModel.place)
+            Spacer()
             FilterBox(filterData: viewModel.getFilterData(for: .participant),
                       selectedFilter: $viewModel.participant)
         }

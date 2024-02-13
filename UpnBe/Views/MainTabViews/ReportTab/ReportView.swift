@@ -12,20 +12,23 @@ struct ReportView: View {
     lazy var data = viewModel.getData()
 
     var body: some View {
-        ZStack {
+        ScrollView {
             Color.black.edgesIgnoringSafeArea(.all)
-            
-            VStack(spacing: 0) {
-                ReportProfileBox()
+            ZStack {
                 
-                VStack(spacing: 15) {
-                    ReportDrillLevel(datas: viewModel.getData())
-                    ReportDrillCurrentState(datas: viewModel.getData())
-                    Spacer()
+                
+                VStack(spacing: 0) {
+                    ReportProfileBox()
+                    
+                    VStack(spacing: 15) {
+                        ReportDrillLevel(datas: viewModel.getData())
+                        ReportDrillCurrentState(datas: viewModel.getData())
+                        Spacer()
+                    }
+                    .padding(.vertical, 20)
+                    .padding(.horizontal, 25)
+                    .background(Color.background)
                 }
-                .padding(.vertical, 20)
-                .padding(.horizontal, 25)
-                .background(Color.background)
             }
         }
     }

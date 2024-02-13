@@ -25,21 +25,20 @@ struct OnboardingReadyView: View {
             Color.background.edgesIgnoringSafeArea(.all)
             
             GeometryReader { geometry in
-                VStack {
-                    Spacer()
-                    
+                VStack(spacing: 0) {
                     OnboardingTitle(title: "나의 풋살 레벨은?")
-                        .padding(.top, 100)
+                        .padding(.top, geometry.size.height * (100 / 740))
                     
                     Text("내 레벨을 알기까지 걸리는 시간은 단 2분\n단 20개의 영상을 보고 선택만 하세요!")
                         .foregroundColor(.basic)
                         .font(.Paragraph4)
                         .multilineTextAlignment(.center)
-                        .frame(height: 44)
-                        .padding(.bottom, 110)
+                        .frame(height: geometry.size.height * (44 / 740))
+                        .padding(.bottom, geometry.size.height * (110 / 740))
                     
                     
-                    OnboardingReadyDesc(viewModel: viewModel)
+                    OnboardingReadyDesc(viewModel: viewModel,
+                                        geometry: geometry)
                     
                     Spacer()
                     
@@ -48,8 +47,8 @@ struct OnboardingReadyView: View {
                         action: confirmButtonTapped,
                         width: geometry.size.width - 40
                     )
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 30)
+                    .padding(.horizontal, geometry.size.height * (20 / 740))
+                    .padding(.bottom, geometry.size.height * (30 / 740))
                 }
             }
         }
