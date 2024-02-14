@@ -14,7 +14,7 @@
 <br/>
 
 ### 작동 영상
-![image](https://hackmd.io/_uploads/SJvyVl5ia.png)
+![Simulator Screen Recording - iPhone 14 Pro - 2024-02-14 at 16 55 22](https://github.com/rarlala/issue/assets/48057629/78f05222-f7e9-4e07-afc9-cc9fca5ddc01)
 
 
 <br/>
