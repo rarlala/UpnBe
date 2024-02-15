@@ -15,8 +15,6 @@ struct ReportView: View {
         ScrollView {
             Color.black.edgesIgnoringSafeArea(.all)
             ZStack {
-                
-                
                 VStack(spacing: 0) {
                     ReportProfileBox()
                     

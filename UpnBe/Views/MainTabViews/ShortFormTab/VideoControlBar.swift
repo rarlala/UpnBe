@@ -10,7 +10,6 @@ import Combine
 
 struct VideoControlBar: View {
     @ObservedObject var viewModel: VideoPlayerViewModel
-    @State private var isDragging = false
     @State private var tempTime: Double = 0
     
     var body: some View {
@@ -18,16 +17,14 @@ struct VideoControlBar: View {
         
         ZStack(alignment: .center) {
             GeometryReader { geometry in
-                let currentPlayingWidth = geometry.size.width * playingPercent
+                let currentPlayingWidth = max(0, geometry.size.width * playingPercent)
                 
                 let drag = DragGesture()
                     .onChanged { value in
-                        isDragging = true
                         tempTime = max(0, Double(value.location.x / geometry.size.width) * viewModel.duration)
                     }
                     .onEnded { _ in
                         viewModel.moveTime(seconds: tempTime)
-                        isDragging = false
                     }
                 
                 Rectangle()
