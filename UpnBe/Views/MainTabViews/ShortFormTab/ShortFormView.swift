@@ -12,7 +12,7 @@ struct ShortFormView: View {
     @StateObject var viewModel = ShortFormViewModel()
     
     // TODO: 실제 비디오 링크로 수정
-    let url: String = "https://s3-figma-videos-production-sig.figma.com/video/1241797149607002234/TEAM/fad3/24d9/-5c51-4cbe-8c72-eca5b12f79ef?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hUb7m7gz1SN17f3aQoTnEcAoQ7c9PsczfnpecvVQ5eB9MUY6XINJYWh8qTosiDIJOHpX3m7Dh6Nu5TRD8Kov2kDRoLYX9GS5ZkrZWZhID~H7mtMabS770UNiuC9ANjjaOs1P9JweoirBduP6POrhjwBYitFFhR~qE6C3jB6CabDKd3Ym1aO9avmiZBfl~O12-bbTueAYUB5Ij7~ZCF7dCT2~AMj12n-pz9J25a-MiW07aDoXd8ujxvNXUX5ZPk-JM6El3mc6y6A2olrRAgSkH5QedzkaK-e~t6MaFnz32GQpOW00QkoiqGdN4tB6tpkpcnNW-ClXI1-~1hZMJ9a1ow__"
+    let url: String = "https://s3-figma-videos-production-sig.figma.com/video/1241797149607002234/TEAM/fad3/24d9/-5c51-4cbe-8c72-eca5b12f79ef?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B2E1hIJmbsS02lQyg0VHBfx9RMKLJi40tXYkyBILlG~~M1SGUYQSHyN1iabyQJWfJV5nympu1rE0LXhFgUfDN8GRBiRSUqSjBNY2LaY-xy51fCEz~yzDQ~7nTYL2lISjmt~EQ3BDYloddpzqyxLrtedNZKHXUaRyvzM6eIWtNEgVmLsmN43xEd4bmyKCiCR6Wy13mDoxKDNwUrDl9TI-HApTIfQSIHLyA8Qs4RIWwk--Ry4Y6bWHuaDNsrMTIY6z1Eq3t0Ow8Zn4TYvrwjvW10~rZjeMDPLSf5UbzKCvU5J0v1MJ-Jty20BUZQQIjuc7iFGz1MIXektozz~-cmrCZQ__"
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {

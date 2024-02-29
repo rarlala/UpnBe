@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ReportView: View {
     let viewModel = ReportViewModel()
-    lazy var data = viewModel.getData()
 
     var body: some View {
         ScrollView {
